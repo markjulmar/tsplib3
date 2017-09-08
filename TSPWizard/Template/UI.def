@@ -1,0 +1,13 @@
+LIBRARY      "$$SAFE_ROOT$$UI"
+DESCRIPTION  '$$ROOT$$UI Windows Dynamic Link Library'
+
+EXPORTS
+	TUISPI_providerConfig
+	TUISPI_providerInstall
+	TUISPI_providerRemove
+$$IF(OVERRIDE_LINE)
+	TUISPI_lineConfigDialog
+$$ENDIF
+$$IF(OVERRIDE_PHONE)
+	TUISPI_phoneConfigDialog
+$$ENDIF

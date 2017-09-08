@@ -1,0 +1,1466 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "#include ""afxres.rc""  // Standard components\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 3,1,0,4
+ PRODUCTVERSION 3,0,5,2
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "TSP++ AppWizard (C) 2001-2005 JulMar Technology, Inc."
+            VALUE "CompanyName", "JulMar Technology, Inc."
+            VALUE "FileDescription", "TAPI Service provider wizard"
+            VALUE "FileVersion", "3, 1, 0, 4"
+            VALUE "InternalName", "TSPWIZARD"
+            VALUE "LegalCopyright", "Copyright © 2001-2005 JulMar Technology, Inc."
+            VALUE "OriginalFilename", "TSPWIZARD.DLL"
+            VALUE "ProductName", "TAPI Service Provider Wizard"
+            VALUE "ProductVersion", "3, 0, 5, 2"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CUSTOM0 DIALOGEX 0, 0, 310, 200
+STYLE DS_SETFONT | DS_MODALFRAME | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_PICTURE,"Static",SS_GRAYFRAME | SS_SUNKEN,0,0,104,
+                    199
+    LTEXT           "Welcome to the TAPI Service provider wizard",IDC_HEADER,
+                    111,7,180,10
+    LTEXT           "This program will guide you through the steps of creating a basic shell for your new TAPI service provider.",
+                    IDC_STATIC,111,27,184,19
+    LTEXT           "Project Name:",IDC_STATIC,114,63,56,9
+    EDITTEXT        IDC_PROJECTNAME,161,61,139,12,ES_AUTOHSCROLL
+    LTEXT           "Path:",IDC_STATIC,115,81,56,9
+    EDITTEXT        IDC_PATH,161,79,123,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BROWSE,287,79,13,14,NOT WS_TABSTOP
+    LTEXT           "My &Build Environment is",IDC_STATIC,114,108,137,8
+    COMBOBOX        IDC_COMPILERVER,125,118,150,56,CBS_DROPDOWNLIST | 
+                    WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "This wizard will create a Visual Studio project file which can be loaded into Visual Studio 6.0 or later.",
+                    IDC_STATIC,123,134,182,26
+END
+
+IDD_CUSTOM1 DIALOGEX 0, 0, 310, 200
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD | WS_TABSTOP
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_PICTURE,"Static",SS_GRAYFRAME | SS_SUNKEN,0,0,104,
+                    199
+    LTEXT           "Company Name:",IDC_STATIC,114,19,56,9
+    EDITTEXT        IDC_COMPANYNAME,174,17,126,12,ES_AUTOHSCROLL
+    LTEXT           "What features would you like in your TSP?",IDC_STATIC,
+                    114,46,142,10
+    CONTROL         "I plan to use &SPLUI for my user-interface",IDC_HASUI,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,125,58,146,9
+    CONTROL         "I want to &manage trace events",IDC_WANTTRACER,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,125,69,159,10
+    CONTROL         "This service provider is for Windows NT/2K/XP &only",
+                    IDC_WINNT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,125,80,
+                    179,10
+    LTEXT           "I &want to use this service provider with..",IDC_STATIC,
+                    114,108,137,8
+    COMBOBOX        IDC_TAPIVER,125,118,150,56,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Would you like to generate source file comments?",
+                    IDC_STATIC,114,147,158,10
+    CONTROL         "&Yes, please",IDC_HASCOMMENTS,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,125,160,57,9
+    CONTROL         "No, &thank you",IDC_NOCOMMENTS,"Button",
+                    BS_AUTORADIOBUTTON,125,171,62,9
+END
+
+IDD_CUSTOM2 DIALOG  0, 0, 310, 200
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD | WS_TABSTOP
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "",IDC_PICTURE,"Static",SS_BLACKFRAME,0,0,104,199
+    LTEXT           "What are the communication characteristics of the hardware device you are building a TAPI driver for?",
+                    IDC_STATIC,111,4,196,19
+    CONTROL         "Uses &Windows Sockets to communicate",IDC_USESWINSOCK,
+                    "Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,136,
+                    24,157,9
+    CONTROL         "Uses a Serial &Communications interface",IDC_USECOMM,
+                    "Button",BS_AUTORADIOBUTTON,136,35,157,9
+    CONTROL         "Uses some &other form of communication",IDC_USEOTHER,
+                    "Button",BS_AUTORADIOBUTTON,136,46,157,9
+    LTEXT           "Please enter the Provider &Information for your device:",
+                    IDC_STATIC,111,59,196,11
+    EDITTEXT        IDC_PROVINFO,136,71,169,12,ES_MULTILINE | ES_AUTOHSCROLL
+    LTEXT           "Please enter the &Switch Information for your device:",
+                    IDC_STATIC,111,87,196,11
+    EDITTEXT        IDC_SWITCHINFO,136,99,169,12,ES_MULTILINE | 
+                    ES_AUTOHSCROLL
+    LTEXT           "Please type the name of the structure or object which will contain events coming from you hardware. The input 32-bit pointer will be cast to this type on each handler created by the wizard.  An example might be ""CPBXEvent"".",
+                    IDC_STATIC,111,119,196,34
+    EDITTEXT        IDC_EVENTOBJNAME,136,155,102,12,ES_AUTOHSCROLL
+    CONTROL         "I would like TSP++ to manage my worker threads.",
+                    IDC_USEPOOLMGR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,111,
+                    178,182,10
+END
+
+IDD_CUSTOM3 DIALOG  0, 0, 310, 200
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD | WS_TABSTOP
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "",IDC_PICTURE,"Static",SS_GRAYFRAME | SS_SUNKEN,0,0,104,
+                    199
+    LTEXT           "Please select the call control features which are supported by your hardware device:",
+                    IDC_STATIC,110,3,187,16
+    CONTROL         "",IDC_LINEFUNCS,"Static",SS_BLACKFRAME | NOT WS_VISIBLE | 
+                    WS_DISABLED,110,22,192,125
+    LTEXT           "Number of &addresses per line device:",IDC_STATIC,112,
+                    158,118,11
+    EDITTEXT        IDC_ADDRCOUNT,235,156,45,12,ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN1,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,278,156,11,14
+    LTEXT           "Max # of active &calls per address:",IDC_STATIC,112,172,
+                    118,11
+    EDITTEXT        IDC_ADDRCOUNT2,235,172,45,12,ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN2,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,278,172,11,14
+END
+
+IDD_CUSTOM4 DIALOG  0, 0, 310, 200
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD | WS_TABSTOP
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Please select the phone features which are supported by your hardware device:",
+                    IDC_STATIC,110,4,187,16
+    CONTROL         "",IDC_PICTURE,"Static",SS_GRAYFRAME | SS_SUNKEN,0,0,104,
+                    199
+    CONTROL         "",IDC_PHONEFUNCS,"Static",SS_BLACKFRAME | NOT 
+                    WS_VISIBLE | WS_DISABLED,110,24,192,168
+END
+
+IDD_CUSTOM5 DIALOG  0, 0, 310, 200
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD | WS_TABSTOP
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "AppWizard will create the following &classes for you:",
+                    IDC_STATIC,122,9,168,10
+    LISTBOX         IDC_CLASSES,118,20,183,99,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "C&lass name:",IDC_STATIC,122,125,79,9
+    EDITTEXT        IDC_CLASSNAME,122,135,84,13,ES_AUTOHSCROLL
+    LTEXT           "Header file:",IDC_STATIC,218,125,79,9
+    EDITTEXT        IDC_HEADER,218,135,84,13,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Base class:",IDC_STATIC,121,150,79,9
+    EDITTEXT        IDC_BASECLASS,121,160,84,13,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Implementation file:",IDC_STATIC,218,150,79,9
+    EDITTEXT        IDC_CPPFILE,218,160,84,13,ES_AUTOHSCROLL
+    CONTROL         "",IDC_PICTURE,"Static",SS_BLACKFRAME,0,0,104,199
+END
+
+IDD_CONFERENCE DIALOG  0, 0, 225, 191
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Line Conference Properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Max # of calls in a conference:",IDC_STATIC,7,10,97,9
+    EDITTEXT        IDC_MAXCALLSINCONFERENCE,157,7,27,12,ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN1,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,187,7,11,12
+    LTEXT           "Max # of calls transferred into a conference:",
+                    IDC_STATIC,7,21,145,9
+    EDITTEXT        IDC_MAXTRANSFINCONF,157,20,27,12,ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN2,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,187,20,11,12
+    GROUPBOX        "Creating and destroying a conference",IDC_STATIC,7,35,
+                    211,59
+    CONTROL         "Can add held calls to an existing conference",
+                    IDC_ADDHELD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,46,
+                    161,10
+    CONTROL         "Can create a conference w/o existing call",
+                    IDC_CREATEWOCALL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    16,57,162,10
+    CONTROL         "Can drop a conference",IDC_DROP,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,16,68,107,10
+    CONTROL         "Conferences can go across addresses on a single line",
+                    IDC_CROSSADDR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,
+                    79,187,10
+    GROUPBOX        "Removing calls from a conference",IDC_STATIC,7,98,211,
+                    64
+    LTEXT           "Which calls may be removed:",IDC_STATIC,12,111,93,8
+    LISTBOX         IDC_REMOVEWHEN,16,122,88,30,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "State call is in when removed:",IDC_STATIC,113,111,97,8
+    COMBOBOX        IDC_REMOVESTATE,113,122,99,39,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,21,170,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,87,170,50,14
+    PUSHBUTTON      "&Help",ID_HELP,153,170,50,14
+END
+
+IDD_AGENTPROP DIALOG  0, 0, 173, 178
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Agent Properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Supported Agent Features",IDC_STATIC,7,7,157,58
+    CONTROL         "Can change the agent group",IDC_GROUPS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,16,17,128,10
+    CONTROL         "Can change the agent state",IDC_STATES,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,16,28,112,10
+    CONTROL         "Can change the agent activity",IDC_ACTIVITIES,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,16,39,123,10
+    CONTROL         "Require agent id && password for logon",IDC_REQUIRESID,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,50,132,10
+    LTEXT           "Supported agent states:",IDC_STATIC,9,69,100,8
+    LISTBOX         IDC_LISTSTATES,7,78,157,47,LBS_SORT | LBS_MULTIPLESEL | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Max # of agent groups:",IDC_STATIC,9,137,88,9
+    EDITTEXT        IDC_AGENTGROUPS,108,135,27,12,ES_NUMBER | WS_DISABLED
+    CONTROL         "Spin1",IDC_SPIN1,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,131,135,11,12
+    DEFPUSHBUTTON   "OK",IDOK,6,157,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,61,157,50,14
+    PUSHBUTTON      "&Help",ID_HELP,116,157,50,14
+END
+
+IDD_UUIPROP DIALOG  0, 0, 195, 133
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "User-User information"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Maximum UUI buffer sizes (in bytes)",IDC_STATIC,7,7,181,
+                    98
+    CONTROL         "Accept a call",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,22,63,10
+    EDITTEXT        IDC_ACCEPT,113,20,63,12,ES_NUMBER | WS_DISABLED
+    CONTROL         "Spin1",IDC_SPIN1,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,169,21,11,12
+    CONTROL         "Answer a call",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,38,63,10
+    EDITTEXT        IDC_ANSWER,113,36,63,12,ES_NUMBER | WS_DISABLED
+    CONTROL         "Spin1",IDC_SPIN3,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,169,37,11,12
+    CONTROL         "Place a call",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,54,63,10
+    EDITTEXT        IDC_PLACE,113,52,63,12,ES_NUMBER | WS_DISABLED
+    CONTROL         "Spin1",IDC_SPIN4,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,170,53,11,12
+    CONTROL         "Drop a call",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,70,63,10
+    EDITTEXT        IDC_DROPCALL,113,68,63,12,ES_NUMBER | WS_DISABLED
+    CONTROL         "Spin1",IDC_SPIN5,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,169,68,11,12
+    CONTROL         "Send on connected call",IDC_CHECK5,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,86,94,10
+    EDITTEXT        IDC_SEND,113,84,63,12,ES_NUMBER | WS_DISABLED
+    CONTROL         "Spin1",IDC_SPIN6,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,169,84,11,12
+    DEFPUSHBUTTON   "OK",IDOK,11,112,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,72,112,50,14
+    PUSHBUTTON      "&Help",ID_HELP,133,112,50,14
+END
+
+IDD_CALLCOMPL DIALOG  0, 0, 225, 212
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Call Completion Properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Completion Conditions",IDC_STATIC,7,7,89,9
+    LISTBOX         IDC_TYPES,7,21,104,33,LBS_SORT | LBS_MULTIPLESEL | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Completion Modes",IDC_STATIC,114,7,77,9
+    LISTBOX         IDC_COMPLMODE,114,21,104,33,LBS_SORT | LBS_MULTIPLESEL | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Max # of outstanding requests at one time:",IDC_STATIC,
+                    7,59,140,9
+    EDITTEXT        IDC_MAXCALLCOMPL,147,57,68,12,ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN1,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,205,56,11,12
+    GROUPBOX        "Completion Textual Messages",IDC_STATIC,7,71,211,115
+    EDITTEXT        IDC_MESSAGE,15,81,192,33,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    LTEXT           "Saved Messages:",IDC_STATIC,16,118,106,9
+    LISTBOX         IDC_COMPLTXT,16,130,134,48,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_DISABLED | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "&Add",IDC_ADD,157,130,50,14,WS_DISABLED
+    PUSHBUTTON      "&Remove",IDC_REMOVE,157,149,50,14,WS_DISABLED
+    DEFPUSHBUTTON   "OK",IDOK,21,191,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,87,191,50,14
+    PUSHBUTTON      "&Help",ID_HELP,153,191,50,14
+END
+
+IDD_CALLERID DIALOG  0, 0, 200, 146
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Caller-ID flags"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Supported caller-id information:",IDC_STATIC,7,7,112,8
+    LISTBOX         IDC_CALLERID,7,20,183,50,LBS_SORT | LBS_MULTIPLESEL | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Caller-id is automatically blocked on outgoing calls",
+                    IDC_BLOCKED,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,78,
+                    178,10
+    CONTROL         "Block can be overridden on a call-by-call basis",
+                    IDC_BLOCKED2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,90,
+                    178,10
+    CONTROL         "Caller-id can be supplied by application",IDC_BLOCKED3,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,101,178,10
+    DEFPUSHBUTTON   "OK",IDOK,13,125,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,75,125,50,14
+    PUSHBUTTON      "&Help",ID_HELP,137,125,50,14
+END
+
+IDD_ACCEPT DIALOG  0, 0, 186, 62
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Accept incoming calls"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Incoming calls must be accepted before the station begins to alert.",
+                    IDC_ACCEPTTOALERT,"Button",BS_AUTOCHECKBOX | 
+                    BS_MULTILINE | WS_TABSTOP,14,9,156,21
+    DEFPUSHBUTTON   "OK",IDOK,9,41,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,68,41,50,14
+    PUSHBUTTON      "&Help",ID_HELP,127,41,50,14
+END
+
+IDD_ANSWER DIALOG  0, 0, 186, 95
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Answer Properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "When you answer an incoming call, the active call on the station is automatically:",
+                    IDC_STATIC,7,7,172,18
+    CONTROL         "&Dropped",IDC_DROPPED,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,28,29,72,10
+    CONTROL         "Placed on &hold",IDC_ONHOLD,"Button",BS_AUTORADIOBUTTON,
+                    28,41,63,10
+    CONTROL         "Nothing happens",IDC_NONE,"Button",BS_AUTORADIOBUTTON,
+                    28,53,70,10
+    DEFPUSHBUTTON   "OK",IDOK,9,74,50,14,WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL,68,74,50,14
+    PUSHBUTTON      "&Help",ID_HELP,127,74,50,14
+END
+
+IDD_TRANSFER DIALOG  0, 0, 196, 90
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Consultation Transfer properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Features",IDC_STATIC,7,7,182,39
+    CONTROL         "Hard Hold calls may be transferred",IDC_HOLDTRANSF,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,17,150,10
+    CONTROL         "Any created call may be used as a destination",
+                    IDC_MAKETRANSF,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,
+                    28,162,10
+    LTEXT           "Max # of onHold calls pending a transfer",IDC_STATIC,7,
+                    51,135,8
+    EDITTEXT        IDC_MAXCALLSINCONFERENCE,148,50,41,12,ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN1,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,178,50,11,12
+    DEFPUSHBUTTON   "OK",IDOK,12,69,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,73,69,50,14
+    PUSHBUTTON      "&Help",ID_HELP,134,69,50,14
+END
+
+IDD_HOLD DIALOG  0, 0, 193, 102
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Hold Properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Features",IDC_STATIC,7,7,179,43
+    CONTROL         "Placing a call on hold creates a consultation call",
+                    IDC_HOLDMAKESNEW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    13,19,168,8
+    CONTROL         "Device can swap between held/active call",IDC_SWAPHOLD,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,32,168,8
+    LTEXT           "Max # of calls on hold per address:",IDC_STATIC,10,59,
+                    117,9
+    EDITTEXT        IDC_MAXTRANSFINCONF,140,58,27,12,ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN2,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,166,58,11,12
+    DEFPUSHBUTTON   "OK",IDOK,11,81,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,71,81,50,14
+    PUSHBUTTON      "&Help",ID_HELP,131,81,50,14
+END
+
+IDD_FORWARD DIALOG  0, 0, 224, 230
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Forwarding capabilites"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Features",IDC_STATIC,7,7,210,82
+    CONTROL         "&Requires the establishment of a consultation call",
+                    IDC_CONSULTATION,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    13,19,195,10
+    CONTROL         "Current forwarding state can be reported by hardware",
+                    IDC_STATUSVALID,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,
+                    30,195,10
+    CONTROL         "Internal/External calls may be forwarded separately",
+                    IDC_INTEXT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,41,
+                    195,10
+    CONTROL         "Busy/No Answer may be forwarded separately",IDC_BUSYNA,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,52,195,10
+    CONTROL         "Calls may be forwarded based on the caller-id",
+                    IDC_CALLERID,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,63,
+                    195,10
+    CONTROL         "Number of rings before ""No Answer"" may be specified",
+                    IDC_SPECIFYRINGS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    14,73,195,10
+    GROUPBOX        "Supported Forwarding Modes",IDC_STATIC,7,91,210,50
+    LISTBOX         IDC_MODELIST,13,101,198,31,LBS_MULTIPLESEL | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "",IDC_STATIC,7,143,210,58
+    LTEXT           "Max # of forward entries per request accepted:",
+                    IDC_STATIC,13,153,148,9
+    EDITTEXT        IDC_MAXFWDENTRIES,172,151,27,12,ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN1,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,202,151,11,12
+    LTEXT           "Max # of forward entries based on caller-id:",
+                    IDC_STATIC,13,166,148,9
+    EDITTEXT        IDC_MAXFWDCALLID,172,165,27,12,ES_NUMBER | WS_DISABLED
+    CONTROL         "Spin1",IDC_SPIN3,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,202,165,11,12
+    LTEXT           "Rings for no answer",IDC_STATIC,13,181,68,9
+    LTEXT           "Min:",IDC_STATIC,90,181,14,9
+    EDITTEXT        IDC_MINRINGS,108,179,27,12,ES_NUMBER | WS_DISABLED
+    CONTROL         "Spin1",IDC_SPIN2,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,138,179,11,12
+    LTEXT           "Max:",IDC_STATIC,153,181,14,9
+    EDITTEXT        IDC_MAXRINGS,171,179,27,12,ES_NUMBER | WS_DISABLED
+    CONTROL         "Spin1",IDC_SPIN5,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,201,179,11,12
+    DEFPUSHBUTTON   "OK",IDOK,21,209,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,87,209,50,14
+    PUSHBUTTON      "&Help",ID_HELP,153,209,50,14
+END
+
+IDD_PARK DIALOG  0, 0, 186, 58
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Park Properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Hardware supports directed park",IDC_DIRECTED,"Button",
+                    BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,7,7,172,9
+    CONTROL         "Hardware supports non-directed park.",IDC_NONDIRECTED,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,20,172,9
+    DEFPUSHBUTTON   "OK",IDOK,9,37,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,68,37,50,14
+    PUSHBUTTON      "&Help",ID_HELP,127,37,50,14
+END
+
+IDD_PICKUP DIALOG  0, 0, 186, 58
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Call Pickup Properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Pickup requires a group identifier",IDC_GROUPID,"Button",
+                    BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,7,7,172,9
+    CONTROL         "Call waiting calls may be answered through pickup",
+                    IDC_CALLWAITING,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,
+                    20,172,9
+    DEFPUSHBUTTON   "OK",IDOK,9,37,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,68,37,50,14
+    PUSHBUTTON      "&Help",ID_HELP,127,37,50,14
+END
+
+IDD_SECURE DIALOG  0, 0, 193, 47
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Secure call properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Calls may be secured when created",IDC_SECURE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,7,179,11
+    DEFPUSHBUTTON   "OK",IDOK,11,26,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,71,26,50,14
+    PUSHBUTTON      "&Help",ID_HELP,131,26,50,14
+END
+
+IDD_CALLTREATMENT DIALOG  0, 0, 176, 125
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Call Treatment Properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Supported Call Treatments",IDC_STATIC,7,7,162,90
+    LISTBOX         IDC_LIST,14,19,146,68,LBS_SORT | LBS_MULTIPLESEL | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,7,104,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,63,104,50,14
+    PUSHBUTTON      "&Help",ID_HELP,119,104,50,14
+END
+
+IDD_PREDDIALER DIALOG  0, 0, 204, 150
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Predictive Dialer Properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Features",IDC_STATIC,7,7,190,24
+    CONTROL         "Dialer supports programmable no answer timeout",
+                    IDC_TIMEOUT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,16,
+                    177,10
+    GROUPBOX        "Call states which may be used to signal a transfer",
+                    IDC_STATIC,7,33,190,60
+    LISTBOX         IDC_STATES,12,44,179,43,LBS_SORT | LBS_MULTIPLESEL | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Max # of pending calls at one time:",IDC_STATIC,7,99,
+                    121,9
+    EDITTEXT        IDC_MAXCALLS,135,97,57,12,ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN1,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,185,97,11,12
+    LTEXT           "Max requested  answer timeout in secs:",IDC_STATIC,7,
+                    114,125,9
+    EDITTEXT        IDC_MAXTIMEOUT,135,112,57,12,ES_NUMBER | WS_DISABLED
+    CONTROL         "Spin1",IDC_SPIN3,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,185,112,11,12
+    DEFPUSHBUTTON   "OK",IDOK,14,129,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,77,129,50,14
+    PUSHBUTTON      "&Help",ID_HELP,140,129,50,14
+END
+
+IDD_GENERATEDIGITS DIALOG  0, 0, 186, 61
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Generate Digits properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Supports &Pulse dialing",IDC_PULSE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,7,172,12
+    CONTROL         "Supports &Tone dialing",IDC_TONE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,19,172,12
+    DEFPUSHBUTTON   "OK",IDOK,9,40,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,68,40,50,14
+    PUSHBUTTON      "&Help",ID_HELP,127,40,50,14
+END
+
+IDD_GENERATET DIALOG  0, 0, 168, 132
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Generate Tone properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Tones which can be generated",IDC_STATIC,7,7,154,73
+    LISTBOX         IDC_TONELIST,12,18,142,54,LBS_SORT | LBS_MULTIPLESEL | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Max # of tones used in custom:",IDC_STATIC,7,88,100,9
+    EDITTEXT        IDC_MAXTONES,112,86,47,12,ES_NUMBER | WS_DISABLED
+    CONTROL         "Spin1",IDC_SPIN1,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,150,86,11,12
+    DEFPUSHBUTTON   "OK",IDOK,5,111,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,59,111,50,14
+    PUSHBUTTON      "&Help",ID_HELP,113,111,50,14
+END
+
+IDD_MONITORTONE DIALOG  0, 0, 172, 66
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Monitor Tones properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Max # frequencies for a single tone",IDC_STATIC,7,10,
+                    117,9
+    EDITTEXT        IDC_MAXFREQ,126,8,38,12,ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN1,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,154,10,11,12
+    LTEXT           "Max # tones to monitor at one time",IDC_STATIC,7,26,117,
+                    9
+    EDITTEXT        IDC_MAXTONES,126,24,37,12,ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN3,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,154,25,11,12
+    DEFPUSHBUTTON   "OK",IDOK,6,45,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,61,45,50,14
+    PUSHBUTTON      "&Help",ID_HELP,116,45,50,14
+END
+
+IDD_MONITORD DIALOG  0, 0, 186, 95
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Monitor Digits properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Events which can be detected",IDC_STATIC,7,7,172,60
+    LISTBOX         IDC_LIST,13,18,159,42,LBS_SORT | LBS_MULTIPLESEL | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,9,74,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,68,74,50,14
+    PUSHBUTTON      "&Help",ID_HELP,127,74,50,14
+END
+
+IDD_BLINDXFER DIALOG  0, 0, 169, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Blind Transfer properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Do not allow blind transfers on internal calls",
+                    IDC_NOINTERNAL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,7,
+                    153,9
+    CONTROL         "Do not allow blind transfers on external calls",
+                    IDC_NOEXTERNAL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,
+                    19,153,9
+    DEFPUSHBUTTON   "OK",IDOK,5,34,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,59,34,50,14
+    PUSHBUTTON      "&Help",ID_HELP,113,34,50,14
+END
+
+IDD_MEDIACONTROL DIALOG  0, 0, 209, 93
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Media Control properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Max # of digits in a media control list",IDC_STATIC,7,
+                    10,133,9
+    EDITTEXT        IDC_MAXDIGITS,153,8,45,12,ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN1,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,191,8,11,12
+    LTEXT           "Max # of tones in a media control list",IDC_STATIC,7,24,
+                    133,9
+    EDITTEXT        IDC_MAXTONES,153,23,45,12,ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN3,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,191,23,11,12
+    LTEXT           "Max # of call states in a media control list",
+                    IDC_STATIC,7,39,133,9
+    EDITTEXT        IDC_MAXCS,153,37,45,12,ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN4,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,191,37,11,12
+    LTEXT           "Max # of media modes in a media control list",
+                    IDC_STATIC,7,53,141,9
+    EDITTEXT        IDC_MAXMEDIAMODES,153,51,45,12,ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN5,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,191,51,11,12
+    DEFPUSHBUTTON   "OK",IDOK,15,72,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,79,72,50,14
+    PUSHBUTTON      "&Help",ID_HELP,143,72,50,14
+END
+
+IDD_TERMINALS DIALOG  0, 0, 214, 247
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Terminal properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Terminal Information",IDC_STATIC,7,3,200,163
+    LTEXT           "Name:",IDC_STATIC,12,14,30,10
+    EDITTEXT        IDC_NAME,43,13,154,13,ES_AUTOHSCROLL
+    LTEXT           "Type:",IDC_STATIC,12,27,19,8
+    COMBOBOX        IDC_DEVTYPE,12,36,89,55,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Sharing:",IDC_STATIC,105,27,27,8
+    COMBOBOX        IDC_SHARING,105,36,96,48,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Line && Terminal media can be controlled separately",
+                    IDC_MEDIADIRECTION,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    16,53,187,10
+    LTEXT           "Terminal Modes (events) this device can manage:",
+                    IDC_STATIC,16,66,168,10
+    LISTBOX         IDC_TERMMODES,12,76,189,34,LBS_SORT | LBS_MULTIPLESEL | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Default Terminal modes on startup of TSP:",IDC_STATIC,
+                    16,114,168,10
+    LISTBOX         IDC_DEFTERMMODES,12,125,189,34,LBS_SORT | 
+                    LBS_MULTIPLESEL | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    GROUPBOX        "Created terminals",IDC_STATIC,8,167,199,55
+    LISTBOX         IDC_TERMINALS,14,178,126,38,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&Add",IDC_ADD,148,178,50,14,WS_DISABLED
+    PUSHBUTTON      "&Remove",IDC_REMOVE,148,194,50,14,WS_DISABLED
+    DEFPUSHBUTTON   "OK",IDOK,16,226,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,82,226,50,14
+    PUSHBUTTON      "&Help",ID_HELP,148,226,50,14
+END
+
+IDD_CUSTOM2_3 DIALOG  0, 0, 310, 200
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "",IDC_PICTURE,"Static",SS_GRAYFRAME | SS_SUNKEN,0,0,104,
+                    199
+    LTEXT           "My device has the following characteristics",IDC_STATIC,
+                    110,4,152,8
+    CONTROL         "",IDC_LBLIST,"Static",SS_BLACKFRAME | NOT WS_VISIBLE | 
+                    WS_DISABLED,110,15,192,54
+    LTEXT           "My device supports the following &media types",
+                    IDC_STATIC,110,75,183,9
+    LISTBOX         IDC_MEDIALIST,110,85,192,47,LBS_MULTIPLESEL | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Please select the additional TSP++ objects you wish to override. In most cases this is not necessary.",
+                    IDC_STATIC,110,140,181,18
+    CONTROL         "CTSPIAddressInfo - &address object",IDC_ADDRESS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,123,159,159,10
+    CONTROL         "CTSPICallAppearance - &call object",IDC_CALL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,123,170,159,10
+    CONTROL         "CTSPIConferenceCall - conference &object",IDC_CONFCALL,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,123,181,159,10
+END
+
+IDD_DIALPARAMS DIALOG  0, 0, 341, 124
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Dialing parameters properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Dialing values in mSecs",IDC_STATIC,7,7,327,90
+    LTEXT           "Minimum",IDC_STATIC,97,19,65,8
+    LTEXT           "Maximum",IDC_STATIC,177,19,65,8
+    LTEXT           "Default",IDC_STATIC,257,19,41,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,98,29,229,1
+    LTEXT           "Pause time period",IDC_STATIC,12,37,81,9
+    EDITTEXT        IDC_PAUSE_MIN,97,35,67,12,ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN1,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,157,35,11,12
+    EDITTEXT        IDC_PAUSE_MAX,177,35,67,12,ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN6,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,237,35,11,12
+    EDITTEXT        IDC_PAUSE_DEF,257,35,67,12,ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN10,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,317,35,11,12
+    LTEXT           "Inter-digit time period",IDC_STATIC,12,50,81,9
+    EDITTEXT        IDC_DIGIT_MIN,97,48,67,12,ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN3,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,157,48,11,12
+    EDITTEXT        IDC_DIGIT_MAX,177,48,67,12,ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN7,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,237,48,11,12
+    EDITTEXT        IDC_DIGIT_DEF,257,48,67,12,ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN11,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,317,48,11,12
+    LTEXT           "Digit duration time period",IDC_STATIC,12,63,81,9
+    EDITTEXT        IDC_DUR_MIN,97,61,67,12,ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN2,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,157,62,11,12
+    EDITTEXT        IDC_DUR_MAX,177,61,67,12,ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN8,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,237,62,11,12
+    EDITTEXT        IDC_DUR_DEF,257,61,67,12,ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN12,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,317,62,11,12
+    LTEXT           "Wait for dialtone timeout",IDC_STATIC,12,76,81,9
+    EDITTEXT        IDC_TONE_MIN,97,74,67,12,ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN5,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,157,75,11,12
+    EDITTEXT        IDC_TONE_MAX,177,74,67,12,ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN9,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,237,75,11,12
+    EDITTEXT        IDC_TONE_DEF,257,74,67,12,ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN13,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,317,75,11,12
+    DEFPUSHBUTTON   "OK",IDOK,79,103,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,145,103,50,14
+    PUSHBUTTON      "&Help",ID_HELP,211,103,50,14
+END
+
+IDD_DIALTONES DIALOG  0, 0, 177, 114
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Dialtone properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Select the available dialtone types:",IDC_STATIC,7,7,
+                    137,9
+    LISTBOX         IDC_DIALTONES,7,18,163,66,LBS_SORT | LBS_MULTIPLESEL | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,7,93,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,63,93,50,14
+    PUSHBUTTON      "&Help",ID_HELP,119,93,50,14
+END
+
+IDD_DIALCHARS DIALOG  0, 0, 186, 68
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Dialing characters"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Wait for credit card prompt tone ($)",IDC_BILLING,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,7,163,10
+    CONTROL         "Wait for dial tone (W)",IDC_DIALTONE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,18,163,10
+    CONTROL         "Wait for quiet answer (@)",IDC_ANSWER,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,29,163,10
+    DEFPUSHBUTTON   "OK",IDOK,9,47,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,68,47,50,14
+    PUSHBUTTON      "&Help",ID_HELP,127,47,50,14
+END
+
+IDD_UPDOWNBUFF DIALOG  0, 0, 190, 130
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Upload Buffer properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Buffer features",IDC_STATIC,7,7,176,35
+    LTEXT           "Size of the buffer in bytes:",IDC_STATIC,12,20,86,9
+    EDITTEXT        IDC_BUFFERSIZE,100,18,75,12,ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN1,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,155,18,11,12
+    GROUPBOX        "Available buffers",IDC_STATIC,7,44,176,56
+    LISTBOX         IDC_BUFFERS,13,55,106,39,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&Add",IDC_ADD,125,55,50,14,WS_DISABLED
+    PUSHBUTTON      "&Remove",IDC_REMOVE,125,72,50,14,WS_DISABLED
+    DEFPUSHBUTTON   "OK",IDOK,10,109,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,70,109,50,14
+    PUSHBUTTON      "&Help",ID_HELP,130,109,50,14
+END
+
+IDD_DISPLAY DIALOG  0, 0, 174, 106
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Display device properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Display information",IDC_STATIC,7,7,160,35
+    LTEXT           "Height:",IDC_STATIC,13,19,24,9
+    EDITTEXT        IDC_HEIGHT,42,17,26,12,ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN1,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,65,17,11,12
+    LTEXT           "Width:",IDC_STATIC,94,19,23,9
+    EDITTEXT        IDC_WIDTH,121,17,26,12,ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN3,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,144,18,11,12
+    GROUPBOX        "Display features",IDC_STATIC,7,46,160,31
+    CONTROL         "Can update display information",IDC_CANUPDATEDISPLAY,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,57,146,11
+    DEFPUSHBUTTON   "OK",IDOK,6,85,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,62,85,50,14
+    PUSHBUTTON      "&Help",ID_HELP,118,85,50,14
+END
+
+IDD_BUTTONS DIALOG  0, 0, 221, 226
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Phone buttons and lamps"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Button/Lamp features",IDC_STATIC,7,7,207,36
+    CONTROL         "&Button information can be changed by applications",
+                    IDC_BUTTONWRITE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,
+                    17,175,10
+    CONTROL         "&Lamp information can be changed by applications",
+                    IDC_LAMPWRITE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,
+                    28,175,10
+    GROUPBOX        "Supported buttons and lamps",IDC_STATIC,7,46,207,154
+    LTEXT           "Button/Lamp type",IDC_STATIC,13,56,72,9
+    COMBOBOX        IDC_MODE,13,67,95,82,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Button function",IDC_STATIC,14,82,72,9
+    COMBOBOX        IDC_FUNCTION,14,92,95,82,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Lamp Modes supported",IDC_STATIC,114,56,94,9
+    LISTBOX         IDC_MODES,114,67,95,37,LBS_SORT | LBS_MULTIPLESEL | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Text:",IDC_STATIC,14,113,24,9
+    EDITTEXT        IDC_NAME,47,111,162,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,7,130,207,1
+    LTEXT           "Added buttons and lamps",IDC_STATIC,13,135,102,9
+    LISTBOX         IDC_LIST,13,146,139,47,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&Add",IDC_ADD,159,146,50,14,WS_DISABLED
+    PUSHBUTTON      "&Remove",IDC_REMOVE,159,163,50,14,WS_DISABLED
+    DEFPUSHBUTTON   "OK",IDOK,19,205,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,85,205,50,14
+    PUSHBUTTON      "&Help",ID_HELP,151,205,50,14
+END
+
+IDD_HSWITCH DIALOGEX 0, 0, 225, 213
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Hookswitch properties"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Hookswitch properties",IDC_STATIC,7,7,211,181
+    LTEXT           "Type of hookswitch device",IDC_STATIC,13,16,92,9
+    COMBOBOX        IDC_DEVICE,13,25,193,51,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Available states",IDC_STATIC,13,41,55,9
+    LISTBOX         IDC_AVAIL,13,51,94,30,LBS_SORT | LBS_MULTIPLESEL | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Software settable states",IDC_STATIC,118,41,85,9
+    LISTBOX         IDC_SETTABLE,118,51,94,30,LBS_SORT | LBS_MULTIPLESEL | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Default volume level:",IDC_STATIC,13,88,70,9
+    EDITTEXT        IDC_DEFVOL,86,86,24,12,ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN1,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,100,86,11,12
+    CONTROL         "Software can change",IDC_VOLCHANGE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,127,88,85,8,WS_EX_RIGHT
+    LTEXT           "Default gain level:",IDC_STATIC,13,102,70,9
+    EDITTEXT        IDC_DEFGAIN,86,101,24,12,ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN3,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,100,101,11,12
+    CONTROL         "Software can change",IDC_GAINCHANGE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,127,102,85,8,WS_EX_RIGHT
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,7,119,210,1
+    LTEXT           "Added hookswitch devices",IDC_STATIC,13,123,102,9
+    LISTBOX         IDC_LIST,13,134,139,47,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&Add",IDC_ADD,159,134,50,14,WS_DISABLED
+    PUSHBUTTON      "&Remove",IDC_REMOVE,159,152,50,14,WS_DISABLED
+    DEFPUSHBUTTON   "OK",IDOK,21,192,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,87,192,50,14
+    PUSHBUTTON      "&Help",ID_HELP,153,192,50,14
+    LTEXT           "%",IDC_STATIC,112,88,8,8
+    LTEXT           "%",IDC_STATIC,112,102,8,8
+END
+
+IDD_RINGERS DIALOG  0, 0, 186, 76
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Ringer style properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Total # of ringer styles available:",IDC_STATIC,7,8,117,
+                    9
+    EDITTEXT        IDC_MAXRINGSTYLES,137,7,27,12,ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN2,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,163,7,11,12
+    LTEXT           "Default ring style on initialization:",IDC_STATIC,7,22,
+                    117,9
+    EDITTEXT        IDC_DEFRINGSTYLE,137,20,27,12,ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN5,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,163,20,11,12
+    CONTROL         "Ringer style is software selectable",IDC_WRITE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,37,172,10
+    DEFPUSHBUTTON   "OK",IDOK,9,55,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,68,55,50,14
+    PUSHBUTTON      "&Help",ID_HELP,127,55,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEMPLATE
+//
+
+NEWPROJ.INF             TEMPLATE                "template\\newproj.inf"
+TSPV6.DSP               TEMPLATE                "Template\\TSPV6.dsp"
+TSPV6.DSW               TEMPLATE                "Template\\TSPV6.dsw"
+STDAFX.H                TEMPLATE                "Template\\Stdafx.h"
+STDAFX.CPP              TEMPLATE                "Template\\Stdafx.cpp"
+AGENT.CPP               TEMPLATE                "Template\\Agent.cpp"
+ACCEPT.CPP              TEMPLATE                "Template\\Accept.cpp"
+ANSWER.CPP              TEMPLATE                "Template\\Answer.cpp"
+COMPLETE.CPP            TEMPLATE                "Template\\Complete.cpp"
+CONFERENCE.CPP          TEMPLATE                "Template\\Conference.cpp"
+DEVICE.CPP              TEMPLATE                "Template\\Device.cpp"
+DEVSPECIFIC.CPP         TEMPLATE                "Template\\devspecific.cpp"
+DROPCALL.CPP            TEMPLATE                "Template\\DropCall.cpp"
+GENERATE.CPP            TEMPLATE                "Template\\Generate.cpp"
+HOLD.CPP                TEMPLATE                "Template\\Hold.cpp"
+LINE.CPP                TEMPLATE                "Template\\Line.cpp"
+MAKECALL.CPP            TEMPLATE                "Template\\MakeCall.cpp"
+PHONE.CPP               TEMPLATE                "Template\\Phone.cpp"
+RESOURCE.H              TEMPLATE                "Template\\resource.h"
+ROUTE.CPP               TEMPLATE                "Template\\Route.cpp"
+TRANSFER.CPP            TEMPLATE                "Template\\Transfer.cpp"
+TSP.CPP                 TEMPLATE                "Template\\tsp.cpp"
+TSP.DEF                 TEMPLATE                "Template\\TSP.def"
+TSP.H                   TEMPLATE                "Template\\tsp.h"
+TSP.RC                  TEMPLATE                "Template\\TSP.rc"
+UNSOLICITED.CPP         TEMPLATE                "Template\\unsolicited.cpp"
+UUI.CPP                 TEMPLATE                "Template\\UUI.cpp"
+PARK.CPP                TEMPLATE                "Template\\Park.cpp"
+PICKUP.CPP              TEMPLATE                "Template\\Pickup.cpp"
+QOS.CPP                 TEMPLATE                "Template\\qos.cpp"
+CALLTREAT.CPP           TEMPLATE                "Template\\Calltreat.cpp"
+MEDIACTL.CPP            TEMPLATE                "Template\\MediaCtl.cpp"
+ADDRESS.CPP             TEMPLATE                "Template\\Address.cpp"
+CALL.CPP                TEMPLATE                "Template\\Call.cpp"
+CONFCALL.CPP            TEMPLATE                "Template\\ConfCall.cpp"
+DEVCONFIG.CPP           TEMPLATE                "Template\\DevConfig.cpp"
+FORWARD.CPP             TEMPLATE                "Template\\Forward.cpp"
+TERMINAL.CPP            TEMPLATE                "Template\\Terminal.cpp"
+README.TXT              TEMPLATE                "Template\\Readme.txt"
+INSTALL.CPP             TEMPLATE                "Template\\Install.cpp"
+SECURE.CPP              TEMPLATE                "Template\\secure.cpp"
+VOLUME.CPP              TEMPLATE                "Template\\Volume.cpp"
+DISPLAY.CPP             TEMPLATE                "Template\\Display.cpp"
+GAIN.CPP                TEMPLATE                "Template\\Gain.cpp"
+HSWITCH.CPP             TEMPLATE                "Template\\HSwitch.cpp"
+PHNDATA.CPP             TEMPLATE                "Template\\PhnData.cpp"
+RINGER.CPP              TEMPLATE                "Template\\Ringer.cpp"
+BTNLAMP.CPP             TEMPLATE                "Template\\btnlamp.cpp"
+UI.DEF                  TEMPLATE                "Template\\UI.def"
+UI.DSP                  TEMPLATE                "Template\\UI.dsp"
+UI.DSW                  TEMPLATE                "Template\\UI.dsw"
+UI_CONFIG.CPP           TEMPLATE                "Template\\UI_config.cpp"
+UI_CONFIG.H             TEMPLATE                "Template\\UI_config.h"
+UI_MAIN.CPP             TEMPLATE                "Template\\UI_MAIN.cpp"
+UI_MAIN.H               TEMPLATE                "Template\\UI_MAIN.h"
+UI_MAIN.RC              TEMPLATE                "Template\\UI_MAIN.rc"
+UI_MAIN.RC2             TEMPLATE                "Template\\UI_MAIN.rc2"
+UI_README.TXT           TEMPLATE                "Template\\UI_readme.txt"
+UI_RESOURCE.H           TEMPLATE                "Template\\UI_resource.h"
+UI_STDAFX.CPP           TEMPLATE                "Template\\UI_stdafx.cpp"
+UI_STDAFX.H             TEMPLATE                "Template\\UI_stdafx.h"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_TSPWIZARD           ICON                    "res\\TSPWizard.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_CUSTOM5, DIALOG
+    BEGIN
+        RIGHTMARGIN, 309
+    END
+
+    IDD_CONFERENCE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 218
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 184
+    END
+
+    IDD_AGENTPROP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 166
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 171
+    END
+
+    IDD_UUIPROP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 188
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 126
+    END
+
+    IDD_CALLCOMPL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 218
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 205
+    END
+
+    IDD_CALLERID, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 193
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 139
+    END
+
+    IDD_ACCEPT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_ANSWER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_TRANSFER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 189
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_HOLD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 186
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 95
+    END
+
+    IDD_FORWARD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 217
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 223
+    END
+
+    IDD_PARK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 51
+    END
+
+    IDD_PICKUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 51
+    END
+
+    IDD_SECURE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 186
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 40
+    END
+
+    IDD_CALLTREATMENT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 169
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 118
+    END
+
+    IDD_PREDDIALER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 197
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 143
+    END
+
+    IDD_GENERATEDIGITS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 54
+    END
+
+    IDD_GENERATET, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 161
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 125
+    END
+
+    IDD_MONITORTONE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 165
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 59
+    END
+
+    IDD_MONITORD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_BLINDXFER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 162
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_MEDIACONTROL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 202
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 86
+    END
+
+    IDD_TERMINALS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 207
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 240
+    END
+
+    IDD_DIALPARAMS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 334
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 117
+    END
+
+    IDD_DIALTONES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 170
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 107
+    END
+
+    IDD_DIALCHARS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 61
+    END
+
+    IDD_UPDOWNBUFF, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 183
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 123
+    END
+
+    IDD_DISPLAY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 167
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 99
+    END
+
+    IDD_BUTTONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 214
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 219
+    END
+
+    IDD_HSWITCH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 218
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 206
+    END
+
+    IDD_RINGERS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 69
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_CUSTOM1 DLGINIT
+BEGIN
+    IDC_TAPIVER, 0x403, 17, 0
+0x4154, 0x4950, 0x5620, 0x7265, 0x6973, 0x6e6f, 0x3220, 0x302e, "\000" 
+    IDC_TAPIVER, 0x403, 17, 0
+0x4154, 0x4950, 0x5620, 0x7265, 0x6973, 0x6e6f, 0x3220, 0x312e, "\000" 
+    IDC_TAPIVER, 0x403, 17, 0
+0x4154, 0x4950, 0x5620, 0x7265, 0x6973, 0x6e6f, 0x3320, 0x782e, "\000" 
+    0
+END
+
+IDD_CUSTOM0 DLGINIT
+BEGIN
+    IDC_COMPILERVER, 0x403, 18, 0
+0x6956, 0x7573, 0x6c61, 0x5320, 0x7574, 0x6964, 0x206f, 0x2e36, 0x0030, 
+
+    IDC_COMPILERVER, 0x403, 24, 0
+0x6956, 0x7573, 0x6c61, 0x5320, 0x7574, 0x6964, 0x206f, 0x4e2e, 0x5445, 
+0x3220, 0x3030, 0x0032, 
+    IDC_COMPILERVER, 0x403, 24, 0
+0x6956, 0x7573, 0x6c61, 0x5320, 0x7574, 0x6964, 0x206f, 0x4e2e, 0x5445, 
+0x3220, 0x3030, 0x0033, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_LOGO1               BITMAP                  "res\\bitmap1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RT_MANIFEST
+//
+
+1                       RT_MANIFEST             "Res\\TSPWizard.manifest"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_CANNOTBEBLANK       "This field cannot be blank."
+    IDS_NOUUISELECTED       "You must enter at least one valid UUI data size in order to support UUI. Press Cancel if you do not wish to support UUI."
+    IDS_MUSTENTERGROUPS     "You must pass at least one agent group if the TSP will support the lineSetAgentGroup function."
+    IDS_YOUMUSTSELECT       "You must select at least one of the elements in the list. If you do not want to support this function, press CANCEL."
+    IDS_NODUPSALLOWED       "No duplicate names are allowed for the terminal devices. Please change the name to be unique."
+    IDS_NOTERMINALS         "You have not entered any terminals. If you do not intend to support terminals, press CANCEL."
+    IDS_NOLINEPHONE         "You must select at least one of the following features for the hardware: \n\nCall Control support\nPhone hardware support\n"
+    IDS_YOUMUSTENTER        "You must enter a non-zero value for at least one of these entries. If you do not wish to support this feature, press CANCEL."
+    IDS_NOIO                "You have not selected incoming or outgoing call support. Please select either or both for your device."
+    IDS_NEEDDEFAULTDP       "You must supply default dialing parameters, do you want to use the minimum values as the default?"
+    IDS_MINMAXERR           "The minimum value cannot be greater than the maximum value. If you support a minimum, you must also support a maximum."
+    IDS_NOBUFFERS           "You have not entered any buffers for the phone device. If you do not wish to support this feature, press CANCEL."
+    IDS_DOWNLOADPROPS       "Download Buffer properties"
+    IDS_ADD                 "&Add"
+    IDS_EDIT                "&Edit"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MUSTADDDEVS         "You must add at least one hookswitch device. If you don't wish to support this feature, press CANCEL."
+    IDS_MAXPROB             "The maximum value must be greater or equal to the default value."
+    IDS_CANNOTBEZERO        "This field cannot be zero."
+    IDS_HASUI               "A User-Interface DLL project has been created for you in the sub-directory ""UI"". You may open and build that project to create a UIDLL for your service provider."
+    IDS_MUSTUSENT5          "You have chosen TAPI 3.0 as your target platform. This means that the generated service provider will not run under anything but Windows 2000. Unless you are utilizing a specific feature of TAPI 3.0, we recommend you target TAPI 2.1 for the widest audience.\n\nDo you want to target TAPI 3.0?"
+    IDS_FAILED_CREATE_DIR   "The project directory could not be created."
+    IDS_FAILED_CREATEFILE   "One of the files could not be created in the directory.  Please use an empty directory."
+    IDS_BAD_CONFIG          "The TSPWizard has encountered a fatal error with it's resource map and cannot continue."
+    IDS_BADDIRECTORYPATH    "Please enter a valid directory path including the drive letter."
+    IDS_CAPTION             "TSP++ TAPI Service Provider Wizard 3.0"
+    IDS_PROJECTEXISTS       "There is already a project created in the directory specified."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+#include "afxres.rc"  // Standard components
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

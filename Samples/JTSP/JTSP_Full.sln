@@ -1,0 +1,103 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "JTspUI", "JTSPui\JTspUI.vcproj", "{9474CAE9-4BF3-48F4-BAF6-1E567FBC519B}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TSP", "TSP\TSP.vcproj", "{9554C332-00E3-42DF-B0C9-05547846F218}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Trunk", "Trunk\Trunk.vcproj", "{707763A2-BFD3-4854-B32D-3D43785C4C16}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Station", "Station\Station.vcproj", "{15C61D09-1B95-4864-83EC-79D8A6FCC2C1}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "JPBX", "JPBX\JPBX.vcproj", "{A751F04F-BCD7-4D8B-886C-50818F0653EB}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 6
+		SccLocalPath0 = .
+		CanCheckoutShared = false
+		SolutionUniqueID = {0D6977AB-3205-4C9B-A5FE-6BEC6F57BEB2}
+		SccProjectUniqueName1 = JTSPui\\JTspUI.vcproj
+		SccProjectName1 = \u0022$/JulMar\u0020Technology,\u0020Inc./v3.0/TSPLib/Samples/JTSP/JTSPui\u0022,\u0020WKBAAAAA
+		SccLocalPath1 = JTSPui
+		CanCheckoutShared = false
+		SccProjectUniqueName2 = TSP\\TSP.vcproj
+		SccProjectName2 = \u0022$/JulMar\u0020Technology,\u0020Inc./v3.0/TSPLib/Samples/JTSP/TSP\u0022,\u0020SKBAAAAA
+		SccLocalPath2 = ..\\..
+		CanCheckoutShared = false
+		SccProjectFilePathRelativizedFromConnection2 = Samples\\JTSP\\TSP\\
+		SccProjectUniqueName3 = Trunk\\Trunk.vcproj
+		SccProjectName3 = \u0022$/JulMar\u0020Technology,\u0020Inc./v3.0/TSPLib/Samples/JTSP/Trunk\u0022,\u0020UKBAAAAA
+		SccLocalPath3 = Trunk
+		CanCheckoutShared = false
+		SccProjectUniqueName4 = Station\\Station.vcproj
+		SccProjectName4 = \u0022$/JulMar\u0020Technology,\u0020Inc./v3.0/TSPLib/Samples/JTSP/Station\u0022,\u0020VKBAAAAA
+		SccLocalPath4 = Station
+		CanCheckoutShared = false
+		SccProjectUniqueName5 = JPBX\\JPBX.vcproj
+		SccProjectName5 = \u0022$/JulMar\u0020Technology,\u0020Inc./v3.0/TSPLib/Samples/JTSP/JPBX\u0022,\u0020TKBAAAAA
+		SccLocalPath5 = ..\\..
+		CanCheckoutShared = false
+		SccProjectFilePathRelativizedFromConnection5 = Samples\\JTSP\\JPBX\\
+	EndGlobalSection
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Debug Unicode = Debug Unicode
+		Release = Release
+		Release Unicode = Release Unicode
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{9474CAE9-4BF3-48F4-BAF6-1E567FBC519B}.Debug.ActiveCfg = Debug|Win32
+		{9474CAE9-4BF3-48F4-BAF6-1E567FBC519B}.Debug.Build.0 = Debug|Win32
+		{9474CAE9-4BF3-48F4-BAF6-1E567FBC519B}.Debug Unicode.ActiveCfg = Debug Unicode|Win32
+		{9474CAE9-4BF3-48F4-BAF6-1E567FBC519B}.Debug Unicode.Build.0 = Debug Unicode|Win32
+		{9474CAE9-4BF3-48F4-BAF6-1E567FBC519B}.Release.ActiveCfg = Release|Win32
+		{9474CAE9-4BF3-48F4-BAF6-1E567FBC519B}.Release.Build.0 = Release|Win32
+		{9474CAE9-4BF3-48F4-BAF6-1E567FBC519B}.Release Unicode.ActiveCfg = Release Unicode|Win32
+		{9474CAE9-4BF3-48F4-BAF6-1E567FBC519B}.Release Unicode.Build.0 = Release Unicode|Win32
+		{9554C332-00E3-42DF-B0C9-05547846F218}.Debug.ActiveCfg = Debug|Win32
+		{9554C332-00E3-42DF-B0C9-05547846F218}.Debug.Build.0 = Debug|Win32
+		{9554C332-00E3-42DF-B0C9-05547846F218}.Debug Unicode.ActiveCfg = Debug Unicode|Win32
+		{9554C332-00E3-42DF-B0C9-05547846F218}.Debug Unicode.Build.0 = Debug Unicode|Win32
+		{9554C332-00E3-42DF-B0C9-05547846F218}.Release.ActiveCfg = Release|Win32
+		{9554C332-00E3-42DF-B0C9-05547846F218}.Release.Build.0 = Release|Win32
+		{9554C332-00E3-42DF-B0C9-05547846F218}.Release Unicode.ActiveCfg = Release Unicode|Win32
+		{9554C332-00E3-42DF-B0C9-05547846F218}.Release Unicode.Build.0 = Release Unicode|Win32
+		{707763A2-BFD3-4854-B32D-3D43785C4C16}.Debug.ActiveCfg = Debug|Win32
+		{707763A2-BFD3-4854-B32D-3D43785C4C16}.Debug.Build.0 = Debug|Win32
+		{707763A2-BFD3-4854-B32D-3D43785C4C16}.Debug Unicode.ActiveCfg = Debug|Win32
+		{707763A2-BFD3-4854-B32D-3D43785C4C16}.Debug Unicode.Build.0 = Debug|Win32
+		{707763A2-BFD3-4854-B32D-3D43785C4C16}.Release.ActiveCfg = Release|Win32
+		{707763A2-BFD3-4854-B32D-3D43785C4C16}.Release.Build.0 = Release|Win32
+		{707763A2-BFD3-4854-B32D-3D43785C4C16}.Release Unicode.ActiveCfg = Release|Win32
+		{707763A2-BFD3-4854-B32D-3D43785C4C16}.Release Unicode.Build.0 = Release|Win32
+		{15C61D09-1B95-4864-83EC-79D8A6FCC2C1}.Debug.ActiveCfg = Debug|Win32
+		{15C61D09-1B95-4864-83EC-79D8A6FCC2C1}.Debug.Build.0 = Debug|Win32
+		{15C61D09-1B95-4864-83EC-79D8A6FCC2C1}.Debug Unicode.ActiveCfg = Debug|Win32
+		{15C61D09-1B95-4864-83EC-79D8A6FCC2C1}.Debug Unicode.Build.0 = Debug|Win32
+		{15C61D09-1B95-4864-83EC-79D8A6FCC2C1}.Release.ActiveCfg = Release|Win32
+		{15C61D09-1B95-4864-83EC-79D8A6FCC2C1}.Release.Build.0 = Release|Win32
+		{15C61D09-1B95-4864-83EC-79D8A6FCC2C1}.Release Unicode.ActiveCfg = Release|Win32
+		{15C61D09-1B95-4864-83EC-79D8A6FCC2C1}.Release Unicode.Build.0 = Release|Win32
+		{A751F04F-BCD7-4D8B-886C-50818F0653EB}.Debug.ActiveCfg = Debug|Win32
+		{A751F04F-BCD7-4D8B-886C-50818F0653EB}.Debug.Build.0 = Debug|Win32
+		{A751F04F-BCD7-4D8B-886C-50818F0653EB}.Debug Unicode.ActiveCfg = Debug|Win32
+		{A751F04F-BCD7-4D8B-886C-50818F0653EB}.Debug Unicode.Build.0 = Debug|Win32
+		{A751F04F-BCD7-4D8B-886C-50818F0653EB}.Release.ActiveCfg = Release|Win32
+		{A751F04F-BCD7-4D8B-886C-50818F0653EB}.Release.Build.0 = Release|Win32
+		{A751F04F-BCD7-4D8B-886C-50818F0653EB}.Release Unicode.ActiveCfg = Release|Win32
+		{A751F04F-BCD7-4D8B-886C-50818F0653EB}.Release Unicode.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

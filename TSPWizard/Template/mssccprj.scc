@@ -1,0 +1,17 @@
+SCC = This is a Source Code Control file
+
+[UI.dsp]
+SCC_Aux_Path = "\\192.168.1.3\backup\VCS"
+SCC_Project_Name = "$/JulMar Technology, Inc./v3.0/TSPLib/TSPWizard/Template", FQMAAAAA
+
+[TSPV6.dsp]
+SCC_Aux_Path = "\\192.168.1.3\backup\VCS"
+SCC_Project_Name = "$/JulMar Technology, Inc./v3.0/TSPLib/TSPWizard/Template", FQMAAAAA
+
+[TSPV6.dsw]
+SCC_Aux_Path = "\\192.168.1.3\backup\VCS"
+SCC_Project_Name = "$/JulMar Technology, Inc./v3.0/TSPLib/TSPWizard/Template", FQMAAAAA
+
+[UI.dsw]
+SCC_Aux_Path = "\\192.168.1.3\backup\VCS"
+SCC_Project_Name = "$/JulMar Technology, Inc./v3.0/TSPLib/TSPWizard/Template", FQMAAAAA

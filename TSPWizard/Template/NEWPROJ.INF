@@ -1,0 +1,230 @@
+$$// newproj.inf = template for list of template files
+$$//  format is 'sourceResName' \t 'destFileName'
+$$//	if name starts with / => create new subdir
+
+$$IF(VS6)
+TSPV6.DSW	$$Safe_root$$.dsw
+TSPV6.DSP	$$Safe_root$$.dsp
+$$ENDIF
+
+$$IF(VS2002)
+TSP2002.SLN	$$Safe_root$$.sln
+TSP2002.VCPROJ	$$Safe_root$$.vcproj
+$$ENDIF
+
+$$IF(VS2003)
+TSP2003.SLN	$$Safe_root$$.sln
+TSP2003.VCPROJ	$$Safe_root$$.vcproj
+$$ENDIF
+
+README.TXT	Readme.txt
+STDAFX.CPP	stdafx.cpp
+STDAFX.H	stdafx.h
+TSP.CPP	$$Safe_root$$.cpp
+TSP.H	$$Safe_root$$.h
+DEVICE.CPP	$$DEVICE_CPP_NAME$$
+TSP.DEF	$$Safe_root$$.def
+
+$$// Resources
+RESOURCE.H	resource.h
+TSP.RC	$$Safe_root$$.rc
+
+$$IF(OVERRIDE_LINE)
+LINE.CPP	$$LINE_CPP_NAME$$
+
+$$IF(OVERRIDE_ADDRESS)
+ADDRESS.CPP	$$ADDRESS_CPP_NAME$$
+$$ENDIF
+$$IF(OVERRIDE_CALL)
+CALL.CPP	$$CALL_CPP_NAME$$
+$$ENDIF
+$$IF(OVERRIDE_CONFCALL)
+CONFCALL.CPP	$$CONFCALL_CPP_NAME$$
+$$ENDIF
+
+DROPCALL.CPP	dropcall.cpp
+MAKECALL.CPP	makecall.cpp
+
+$$// Add lineAccept support
+$$IF(LINEFEATURE_0)
+ACCEPT.CPP	accept.cpp
+$$ENDIF
+
+$$// Add conference support
+$$IF(LINEFEATURE_1)
+CONFERENCE.CPP	conference.cpp
+$$ENDIF
+
+$$// Add lineAnswer support
+$$IF(LINEFEATURE_2)
+ANSWER.CPP	answer.cpp
+$$ENDIF
+
+$$// Add transfer support
+$$IF(LINEFEATURE_3 || LINEFEATURE_4)
+TRANSFER.CPP	transfer.cpp
+$$ENDIF
+
+$$// lineSecureCall support
+$$IF(LINEFEATURE_20)
+SECURE.CPP	secure.cpp
+$$ENDIF
+
+$$// Device configuration
+$$IF(LINEFEATURE_25)
+DEVCONFIG.CPP	devconfig.cpp
+$$ENDIF
+
+$$// Add lineCompleteCall support
+$$IF(LINEFEATURE_5)
+COMPLETE.CPP	complete.cpp
+$$ENDIF
+
+$$// Add route point support
+$$IF(LINEFEATURE_35)
+ROUTE.CPP	route.cpp
+$$ENDIF
+
+$$// Add agent support
+$$IF(LINEFEATURE_7)
+AGENT.CPP	agent.cpp
+$$ENDIF
+
+$$// DTMF and tone generation
+$$IF(LINEFEATURE_12 || LINEFEATURE_13)
+GENERATE.CPP	generate.cpp
+$$ENDIF
+
+$$// Hold support
+$$IF(LINEFEATURE_14)
+HOLD.CPP	hold.cpp
+$$ENDIF
+
+$$// UUI support
+$$IF(LINEFEATURE_21)
+UUI.CPP	uui.cpp
+$$ENDIF
+
+$$// Park support
+$$IF(LINEFEATURE_18)
+PARK.CPP	park.cpp
+$$ENDIF
+
+$$// Pickup support
+$$IF(LINEFEATURE_19)
+PICKUP.CPP	pickup.cpp
+$$ENDIF
+
+$$// Forward
+$$IF(LINEFEATURE_9)
+FORWARD.CPP	forward.cpp
+$$ENDIF
+
+$$// QOS
+$$IF(LINEFEATURE_26)
+QOS.CPP	qos.cpp
+$$ENDIF
+
+$$// Call treatments
+$$IF(LINEFEATURE_27)
+CALLTREAT.CPP	calltreat.cpp
+$$ENDIF
+
+$$// Media control
+$$IF(LINEFEATURE_22)
+MEDIACTL.CPP	mediactl.cpp
+$$ENDIF
+
+$$// Terminal support
+$$IF(LINEFEATURE_23)
+TERMINAL.CPP	terminal.cpp
+$$ENDIF
+$$ENDIF
+
+$$// Add phone support
+$$IF(OVERRIDE_PHONE)
+PHONE.CPP	$$PHONE_CPP_NAME$$
+
+$$// GetData/SetData support
+$$IF(PHONEFEATURE_1 || PHONEFEATURE_2)
+PHNDATA.CPP	phndata.cpp
+$$ENDIF
+
+$$// Display
+$$IF(PHONEFEATURE_3)
+$$IF(DISPLAY_CANWRITE)
+DISPLAY.CPP	display.cpp
+$$ENDIF
+$$ENDIF
+
+$$// Button/Lamp
+$$IF(PHONEFEATURE_4)
+$$IF(BUTTON_CANWRITE || LAMP_CANWRITE)
+BTNLAMP.CPP	btnlamp.cpp
+$$ENDIF
+$$ENDIF
+
+$$// phoneSetVolume, phoneSetHookswitch, phoneSetGain
+$$IF(PHONEFEATURE_5)
+$$IF(GAIN_CANWRITE)
+GAIN.CPP	gain.cpp
+$$ENDIF
+$$IF(HOOKSWITCH_CANWRITE)
+HSWITCH.CPP	hswitch.cpp
+$$ENDIF
+$$IF(VOLUME_CANWRITE)
+VOLUME.CPP	volume.cpp
+$$ENDIF
+$$ENDIF
+
+$$// phoneSetRing
+$$IF(PHONEFEATURE_6)
+$$IF(RINGER_CANWRITE)
+RINGER.CPP	ringer.cpp
+$$ENDIF
+$$ENDIF
+
+$$ENDIF
+
+$$// Device specific features
+$$IF(LINEFEATURE_8 || PHONEFEATURE_0)
+DEVSPECIFIC.CPP	devspecific.cpp
+$$ENDIF
+
+UNSOLICITED.CPP	unsolicited.cpp
+
+$$// UI support
+$$IF(!HAS_UI)
+INSTALL.CPP	install.cpp
+$$ELSE
+/UI
+/UI\RES
+UI_STDAFX.CPP	UI\Stdafx.cpp
+UI_STDAFX.H	UI\Stdafx.h
+UI.DEF	UI\$$Safe_root$$ui.def
+
+$$IF(VS6)
+UI.DSW	UI\$$Safe_root$$ui.dsw
+UI.DSP	UI\$$Safe_root$$ui.dsp
+$$ENDIF
+
+$$IF(VS2002)
+UI_2002.SLN	UI\$$Safe_root$$ui.sln
+UI_2002.VCPROJ	UI\$$Safe_root$$ui.vcproj
+$$ENDIF
+
+$$IF(VS2003)
+UI_2003.SLN	UI\$$Safe_root$$ui.sln
+UI_2003.VCPROJ	UI\$$Safe_root$$ui.vcproj
+$$ENDIF
+
+UI_CONFIG.CPP	UI\Config.cpp
+UI_CONFIG.H	UI\Config.h
+UI_MAIN.CPP	UI\$$Safe_root$$ui.cpp
+UI_MAIN.H	UI\$$Safe_root$$ui.h
+UI_MAIN.RC	UI\$$Safe_root$$ui.rc
+UI_RESOURCE.H	UI\resource.h
+UI_MAIN.RC2	UI\RES\$$Safe_root$$ui.RC2
+UI_README.TXT	UI\Readme.txt
+$$ENDIF
+

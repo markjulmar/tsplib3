@@ -1,0 +1,49 @@
+// MAKEHELP.BAT generated Help Map file.  Used by TSPWizard.HPJ. 
+ 
+// Commands (ID_* and IDM_*) 
+ 
+// Prompts (IDP_*) 
+ 
+// Resources (IDR_*) 
+HIDR_241                                0x200E0
+ 
+// Dialogs (IDD_*) 
+HIDD_CONFERENCE                         0x20079
+HIDD_AGENTPROP                          0x2007A
+HIDD_UUIPROP                            0x2007B
+HIDD_CALLCOMPL                          0x2007C
+HIDD_CALLERID                           0x2007D
+HIDD_ACCEPT                             0x2007F
+HIDD_ANSWER                             0x20080
+HIDD_TRANSFER                           0x20086
+HIDD_HOLD                               0x20087
+HIDD_FORWARD                            0x20088
+HIDD_PARK                               0x20089
+HIDD_PICKUP                             0x2008A
+HIDD_SECURE                             0x2008B
+HIDD_CALLTREATMENT                      0x2008C
+HIDD_PREDDIALER                         0x2008D
+HIDD_GENERATEDIGITS                     0x2008E
+HIDD_GENERATET                          0x2008F
+HIDD_MONITORTONE                        0x20090
+HIDD_MONITORD                           0x20091
+HIDD_BLINDXFER                          0x20092
+HIDD_MEDIACONTROL                       0x20094
+HIDD_TERMINALS                          0x20095
+HIDD_DIALPARAMS                         0x20097
+HIDD_DIALTONES                          0x20098
+HIDD_DIALCHARS                          0x200BB
+HIDD_UPDOWNBUFF                         0x200BE
+HIDD_DISPLAY                            0x200BF
+HIDD_BUTTONS                            0x200C1
+HIDD_HSWITCH                            0x200C9
+HIDD_RINGERS                            0x200CA
+HIDD_CUSTOM0                            0x203E8
+HIDD_CUSTOM1                            0x203E9
+HIDD_CUSTOM2                            0x203EA
+HIDD_CUSTOM2_3                          0x203EB
+HIDD_CUSTOM3                            0x203EC
+HIDD_CUSTOM4                            0x203ED
+HIDD_CUSTOM5                            0x203EE
+ 
+// Frame Controls (IDW_*) 

@@ -1,0 +1,24 @@
+Microsoft (R) Help Compiler
+HCRTF 4.03.0002
+Copyright (c) Microsoft Corp 1990 - 1995. All rights reserved.
+tspwizard.hpj
+    HC1012: Note: topic #3 of D:\TSPWizard_v2\Hlp\TSPWizard.rtf : 
+	Table cell borders are not supported.
+    HC1012: Note: topic #7 of D:\TSPWizard_v2\Hlp\TSPWizard.rtf : 
+	Table cell borders are not supported.
+    HC1012: Note: topic #8 of D:\TSPWizard_v2\Hlp\TSPWizard.rtf : 
+	Table cell borders are not supported.
+    HC1010: Note: 
+	The following mapped Topic IDs were not used in any topic:
+	HIDR_241
+38	Topics
+38	Jumps
+37	Keywords
+30	Bitmaps
+
+
+Created D:\TSPWizard_v2\Hlp\TSPWizard.HLP, 207,136 bytes
+Bitmaps: 162,449 bytes
+Hall+Zeck compression decreased help file by 38,993 bytes.
+Compile time: 0 minutes, 2 seconds
+4 notes, 0 warnings

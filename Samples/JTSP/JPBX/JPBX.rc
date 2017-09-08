@@ -1,0 +1,842 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\JPBX.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\JPBX.ico"
+IDI_ACTIVITY            ICON                    "res\\activity.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RT_MANIFEST
+//
+
+1                       RT_MANIFEST             "app.manifest"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDB_TREE_IMAGES         BITMAP                  "res\\images.bmp"
+IDB_LIST_SMALL          BITMAP                  "res\\bitmap1.bmp"
+IDB_LIST_LARGE          BITMAP                  "res\\bmp00001.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  25, 25
+BEGIN
+    BUTTON      ID_ADD_AGENT
+    BUTTON      ID_ADD_GROUP
+    BUTTON      ID_ADD_STATION
+    BUTTON      ID_ADD_TRUNK
+    BUTTON      ID_ADD_ROUTEPOINT
+    BUTTON      ID_ADD_PDIALER
+    BUTTON      ID_ADD_IVRU
+    SEPARATOR
+    BUTTON      IDM_CTX_REMOVE
+    SEPARATOR
+    BUTTON      ID_VIEW_LARGEICON
+    BUTTON      ID_VIEW_SMALLICON
+    BUTTON      ID_VIEW_LIST
+    BUTTON      ID_VIEW_DETAILS
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        POPUP "Import/Export"
+        BEGIN
+            MENUITEM "Import from a file",          ID_FILE_IMPORT
+            MENUITEM "Export to a file",            ID_FILE_EXPORT
+        END
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "Global &Properties",          ID_EDIT_PROPERTIES
+    END
+    POPUP "&Add"
+    BEGIN
+        MENUITEM "&Agent",                      ID_ADD_AGENT
+        MENUITEM "&Group",                      ID_ADD_GROUP
+        MENUITEM "&Route Point",                ID_ADD_ROUTEPOINT
+        MENUITEM "&Station",                    ID_ADD_STATION
+        MENUITEM "&Trunk",                      ID_ADD_TRUNK
+        MENUITEM "&Predictive Dialer",          ID_ADD_PDIALER
+        MENUITEM "&VRU",                        ID_ADD_IVRU
+    END
+    POPUP "&Tools"
+    BEGIN
+        MENUITEM "Soft&Phone",                  ID_TOOLS_STATION
+        MENUITEM "&Trunk Client",               ID_TOOLS_TRUNK
+        MENUITEM "TAPI &Dialer",                ID_TOOLS_DIALER
+        MENUITEM SEPARATOR
+        MENUITEM "&Generate Incoming Traffic",  ID_TOOLS_SOAKTEST
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About JPBX...",              ID_APP_ABOUT
+    END
+END
+
+IDM_ACTPROP MENU 
+BEGIN
+    POPUP "X"
+    BEGIN
+        MENUITEM "&Delete",                     IDM_CTX_REMOVE
+        MENUITEM SEPARATOR
+        MENUITEM "&Properties",                 IDM_CTX_PROPERTIES
+    END
+END
+
+IDR_LINEMENU MENU 
+BEGIN
+    POPUP "X"
+    BEGIN
+        MENUITEM "&Call List",                  IDM_CTX_CALLS
+        MENUITEM "&Delete",                     IDM_CTX_REMOVE
+        MENUITEM SEPARATOR
+        MENUITEM "&Properties",                 IDM_CTX_PROPERTIES
+    END
+END
+
+IDR_QUEUEMENU MENU 
+BEGIN
+    POPUP "X"
+    BEGIN
+        MENUITEM "&Call List",                  IDM_CTX_CALLS
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    VK_F3,          ID_APP_EXIT,            VIRTKEY, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 207, 68
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About JPBX"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,7,7,20,20
+    LTEXT           "PBX/ACD Simulator version 3.051",IDC_STATIC,48,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 1998-2004 JulMar Technology, Inc.",
+                    IDC_STATIC,39,20,161,8
+    DEFPUSHBUTTON   "OK",IDOK,87,47,32,14,WS_GROUP
+    CTEXT           "http:\\\\www.julmar.com",IDC_WEBADDR,24,32,165,8
+END
+
+IDD_AGENT DIALOG  0, 0, 203, 186
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Agent Properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Agent ID:",IDC_STATIC,14,15,45,9
+    EDITTEXT        IDC_NAME,63,13,121,13,ES_AUTOHSCROLL
+    LTEXT           "Password:",IDC_STATIC,14,30,43,9
+    EDITTEXT        IDC_PASSWORD,63,28,58,13,ES_AUTOHSCROLL
+    GROUPBOX        "Options",IDC_STATIC,7,47,189,33
+    CONTROL         "Agent goes to &ready state when call ends",
+                    IDC_AUTOREADY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,
+                    59,173,11
+    GROUPBOX        "Groups this agent may log into ",IDC_STATIC,7,88,189,71
+    LISTBOX         IDC_GROUPS,13,101,176,50,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    LBS_EXTENDEDSEL | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,43,165,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,109,165,50,14
+END
+
+IDD_AGENTGROUP DIALOG  0, 0, 214, 146
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Agent Group Properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,7,7,200,112
+    LTEXT           "Name of Group:",IDC_STATIC,13,13,55,9
+    EDITTEXT        IDC_NAME,71,11,130,13,ES_AUTOHSCROLL
+    GROUPBOX        "Members of Group ",IDC_STATIC,7,32,200,87
+    LISTBOX         IDC_MEMBERS,15,45,182,65,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    LBS_EXTENDEDSEL | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,49,125,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,115,125,50,14
+END
+
+IDD_STATISTICS DIALOGEX 0, 0, 315, 252
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LISTBOX         IDC_DEBUGLIST,7,113,301,130,LBS_OWNERDRAWFIXED | 
+                    LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | LBS_NOSEL | 
+                    WS_VSCROLL | WS_HSCROLL,WS_EX_CLIENTEDGE
+    LTEXT           "Communication Stream Monitor",IDC_HEADER2,7,104,301,10,
+                    SS_NOPREFIX | SS_CENTERIMAGE
+    LTEXT           "PBX/ACD System © 1998-2004 JulMar Technology, Inc.",
+                    IDC_HEADER1,7,0,301,10,SS_NOPREFIX | SS_CENTERIMAGE
+    LTEXT           "Connections:",IDC_STATIC,7,19,48,8
+    LTEXT           "0",IDC_CONNECTIONS,62,19,48,8
+    LTEXT           "Running Soak Test",IDC_SOAKTEST,241,19,67,9
+    LTEXT           "0",IDC_CPS,62,30,48,9
+    LTEXT           "Incoming CPS:",IDC_STATIC,7,30,48,8
+    LTEXT           "0",IDC_TRUNKSALLOC,62,42,48,9
+    LTEXT           "Trunks Seized:",IDC_STATIC,7,42,48,8
+    LTEXT           "(0 may indicate all trunks siezed)",IDC_STATIC,116,30,
+                    132,8
+END
+
+IDD_STATION DIALOGEX 0, 0, 203, 172
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Station Properties"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "Dialable No:",IDC_STATIC,13,38,44,8
+    EDITTEXT        IDC_DNUM,65,35,27,13,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Description:",IDC_STATIC,13,56,41,8
+    EDITTEXT        IDC_DESCRIPTION,65,54,125,13,ES_AUTOHSCROLL
+    GROUPBOX        "Groups which may log onto this station device",
+                    IDC_STATIC,7,73,189,71
+    LISTBOX         IDC_GROUPS,13,86,176,50,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    LBS_EXTENDEDSEL | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,43,151,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,109,151,50,14
+    CTEXT           "The station line device represents a single phone unit which an agent may interact with.",
+                    IDC_STATIC,7,6,188,22,SS_NOPREFIX,WS_EX_STATICEDGE
+END
+
+IDD_TRUNK DIALOGEX 0, 0, 224, 135
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Trunk Line Properties"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CTEXT           "The Trunk device represents a connection from the PBX to the outside world.  All incoming and outgoing calls which  result in off-switch activity require the allocation of a trunk line.",
+                    IDC_STATIC,7,6,210,27,SS_NOPREFIX,WS_EX_STATICEDGE
+    LTEXT           "Trunk Identifier:",IDC_STATIC,13,40,58,9
+    LTEXT           "",IDC_TRUNKID,71,38,27,13,SS_SUNKEN
+    GROUPBOX        "Trunk Status",IDC_STATIC,7,54,210,49
+    CONTROL         "Trunk is &Online and usable",IDC_ONLINE,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,29,69,143,10
+    CONTROL         "Trunk is O&ffline and unavailable",IDC_OFFLINE,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,29,81,143,10
+    DEFPUSHBUTTON   "OK",IDOK,54,114,50,14,WS_DISABLED | WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL,120,114,50,14
+    LTEXT           "(Assigned by the PBX)",IDC_STATIC,108,40,99,9
+END
+
+IDD_RPOINT DIALOGEX 0, 0, 203, 255
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Route Point Properties"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CTEXT           "The Route Point is a routing device associated with one\ror more trunk line devices",
+                    IDC_STATIC,7,6,188,22,SS_NOPREFIX,WS_EX_STATICEDGE
+    LTEXT           "Dialable No:",IDC_STATIC,13,38,44,8
+    EDITTEXT        IDC_DNUM,65,35,27,13,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Description:",IDC_STATIC,13,56,41,8
+    EDITTEXT        IDC_DESCRIPTION,65,54,125,13,ES_AUTOHSCROLL
+    GROUPBOX        "Trunk devices this route point will manage",IDC_STATIC,
+                    7,75,189,71
+    LISTBOX         IDC_TRUNKS,13,88,176,50,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    LBS_EXTENDEDSEL | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Routing Options",IDC_STATIC,7,149,189,77
+    CONTROL         "&Auto Route",IDC_AUTOROUTE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,161,65,8
+    CONTROL         "Allow &Programatic Routing",IDC_ALLOWROUTE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,88,161,100,8
+    LTEXT           "Wait for",IDC_STATIC,13,176,30,10
+    EDITTEXT        IDC_WAITTIME,45,174,29,13,ES_AUTOHSCROLL | ES_NUMBER | 
+                    WS_DISABLED
+    CONTROL         "Spin1",IDC_SPIN1,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS | WS_DISABLED,63,173,10,14
+    LTEXT           "seconds and then ..",IDC_STATIC,79,176,96,10
+    COMBOBOX        IDC_COMMANDS,17,192,165,46,CBS_DROPDOWNLIST | 
+                    WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_LINES,17,207,165,55,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,43,234,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,109,234,50,14
+END
+
+IDD_PDIALER DIALOGEX 0, 0, 202, 114
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Predictive Dialer Properties"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CTEXT           "The predictive dialer is an outgoing line device which supports automatic end-point media detection.",
+                    IDC_STATIC,7,6,188,22,SS_NOPREFIX,WS_EX_STATICEDGE
+    LTEXT           "Description:",IDC_STATIC,12,39,41,8
+    EDITTEXT        IDC_DESCRIPTION,64,37,125,13,ES_AUTOHSCROLL
+    LTEXT           "When a call is placed using this dialer...",IDC_STATIC,
+                    7,58,136,9
+    COMBOBOX        IDC_OPTIONS,20,70,157,44,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,47,93,50,14,WS_DISABLED
+    PUSHBUTTON      "Cancel",IDCANCEL,113,93,50,14
+END
+
+IDD_CALLSTATE DIALOG  0, 0, 212, 44
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Predictive Dial - "
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Busy",IDC_BUSY,2,22,40,15
+    PUSHBUTTON      "Voice",IDC_VOICE,44,22,40,15
+    PUSHBUTTON      "Machine",IDC_MACHINE,86,22,40,15
+    PUSHBUTTON      "Unknown",IDC_UNKNOWN,128,22,40,15
+    CTEXT           "Select the detected signal for this predictive call:",
+                    IDC_STATIC,7,7,198,11,SS_NOPREFIX | SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    PUSHBUTTON      "No Answer",IDC_NOANSWER,170,22,40,15
+END
+
+IDD_CALLLIST DIALOGEX 0, 0, 110, 100
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Call List - "
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "List1",IDC_CALLS,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | WS_BORDER | WS_TABSTOP,0,1,110,98
+END
+
+IDD_VRU DIALOGEX 0, 0, 220, 167
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "VRU Properties"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CTEXT           "The Voice-Response-Unit device represents an automated voice station which reacts to digits and tones played on the line.",
+                    IDC_STATIC,7,6,206,22,SS_NOPREFIX,WS_EX_STATICEDGE
+    LTEXT           "Dialable No:",IDC_STATIC,13,38,44,8
+    EDITTEXT        IDC_DNUM,65,35,27,13,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Description:",IDC_STATIC,13,56,41,8
+    EDITTEXT        IDC_DESCRIPTION,65,54,125,13,ES_AUTOHSCROLL
+    GROUPBOX        "VRU Events",IDC_STATIC,7,73,206,70
+    LTEXT           "Wait for",IDC_STATIC,13,87,30,10
+    EDITTEXT        IDC_WAITTIME,45,85,29,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN1,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,63,84,11,14
+    LTEXT           "seconds and then ..",IDC_STATIC,79,87,96,10
+    COMBOBOX        IDC_COMMANDS,17,103,165,46,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_LINES,17,118,165,55,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,56,146,50,14,WS_DISABLED
+    PUSHBUTTON      "Cancel",IDCANCEL,122,146,50,14
+END
+
+IDD_PROPERTIES DIALOG  0, 0, 269, 113
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "PBX Properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,7,7,255,81
+    LTEXT           "TCP/IP Port for data transfer:",IDC_STATIC,15,16,98,10
+    EDITTEXT        IDC_PORT,118,15,32,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "(Requires a PBX shutdown)",IDC_STATIC,157,16,96,10
+    DEFPUSHBUTTON   "OK",IDOK,76,92,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,142,92,50,14
+    EDITTEXT        IDC_FILENAME,27,58,154,13,ES_AUTOHSCROLL | ES_OEMCONVERT
+    LTEXT           "File Name:",IDC_STATIC,27,48,80,8
+    PUSHBUTTON      "&Browse...",IDC_BROWSE,187,58,48,14
+    CONTROL         "&Enable Logging to disk",IDC_ENABLELOGGING,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,33,175,10
+END
+
+IDD_GENTRAFFIC DIALOG  0, 0, 186, 66
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Generate Trunk Traffic"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Generate at most",IDC_STATIC,13,17,58,10
+    EDITTEXT        IDC_CPS,78,15,27,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN1,"msctls_updown32",UDS_WRAP | 
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS,97,14,11,14
+    LTEXT           "Calls/Second",IDC_STATIC,116,17,57,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,7,40,172,1
+    DEFPUSHBUTTON   "Start",IDOK,35,45,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,101,45,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,3
+ PRODUCTVERSION 3,0,5,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "JulMar Technology, Inc."
+            VALUE "FileDescription", "JPBX Simulator"
+            VALUE "FileVersion", "1, 0, 0, 3"
+            VALUE "InternalName", "JPBX"
+            VALUE "LegalCopyright", "Copyright (C) 1998-2004 JulMar Technology, Inc."
+            VALUE "OriginalFilename", "JPBX.EXE"
+            VALUE "ProductName", "JPBX Application"
+            VALUE "ProductVersion", "3, 0, 5, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 200
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 61
+    END
+
+    IDD_AGENT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 196
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 179
+    END
+
+    IDD_AGENTGROUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 207
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 139
+    END
+
+    IDD_STATISTICS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 308
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 245
+    END
+
+    IDD_STATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 196
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 165
+    END
+
+    IDD_TRUNK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 217
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 128
+    END
+
+    IDD_RPOINT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 196
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 248
+    END
+
+    IDD_PDIALER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 195
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 107
+    END
+
+    IDD_CALLSTATE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 205
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 37
+    END
+
+    IDD_CALLLIST, DIALOG
+    BEGIN
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 99
+    END
+
+    IDD_VRU, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 213
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 160
+    END
+
+    IDD_PROPERTIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 262
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 106
+    END
+
+    IDD_GENTRAFFIC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 59
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_HYPERHAND           CURSOR                  "res\\hyperhan.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "JulMar PBX Simulator\n\nJPBX\n\n\nJPBX.Document\nJPBX Document"
+    IDS_DELETE              "Are you sure you want to delete this object?\nOnce the object is deleted it may not be\nrecovered and must be completly re-added."
+    IDS_INIFILE             "JPBX.DAT"
+    IDS_ROOT                "Root - "
+    IDS_GROUPS              "Agent Groups"
+    IDS_AGENTS              "Agents"
+    IDS_LV_NAME             "Name"
+    IDS_LV_AGENTS           "Agents"
+    IDS_LV_STATE            "State"
+    IDS_LV_GROUPS           "Agent Groups"
+    IDS_LV_GROUPNUM         "ID"
+    IDP_SOCKETS_INIT_FAILED "WinSock Library failed to initialize."
+    IDS_AS_UNKNOWN          "Unknown"
+    IDS_AS_SIGNEDOUT        "Signed Out"
+    IDS_AS_READY            "Ready"
+    IDS_AS_NOTREADY         "Not Ready"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "JPBX Simulator"
+    AFX_IDS_IDLEMESSAGE     "Running"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_ADD_AGENT            "Add a new Agent"
+    IDS_DEFDIALERNAME       "Dialer [%04ld]"
+    ID_ADD_GROUP            "Add a new Agent Group and Queue"
+END
+
+STRINGTABLE 
+BEGIN
+    IDM_CTX_REMOVE          "Delete the current object"
+    ID_EDIT_PROPERTIES      "Global PBX Properties"
+    ID_ADD_STATION          "Add a new station line device"
+    ID_ADD_TRUNK            "Add a new Trunk Line device"
+    ID_ADD_ROUTEPOINT       "Add a new Route Point line device"
+    ID_ADD_PDIALER          "Add a new predictive dialer line device"
+    ID_ADD_IVRU             "Add a new voice-response unit line device"
+    ID_TOOLS_STATION        "Start a new copy of the JPBX station client"
+    ID_TOOLS_DIALER         "Open the TAPI Dialer program"
+    ID_TOOLS_TRUNK          "Start a new copy of the JPBX trunk client"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_SMALLICON       "Display items by using small icons.\nSmall Icons"
+    ID_VIEW_LARGEICON       "Display items by using large icons.\nLarge Icons"
+    ID_VIEW_LIST            "Displays items in a list.\nList"
+    ID_VIEW_DETAILS         "Displays detailed information about each item in the window.\nDetails"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_AS_INCALLWORK       "In Call Work"
+    IDS_AS_BUSYACD          "Busy ACD"
+    IDS_AS_BUSY             "Busy Other"
+    IDS_DEFLINENAME         "Station [%04ld]"
+    IDS_LV_EXTENSION        "Extension"
+    IDS_STATIONS            "Stations"
+    IDS_CANNOTDELETELINE    "The line cannot be deleted while there are calls associated with it.  Drop all calls and try again."
+    IDS_TRUNKOFFLINE        "Warning: You are taking a trunk off-line.  This will make it unavailable for incoming or outgoing calls.\n\nAre you sure you wish to do this?"
+    IDS_TOOMANYOBJS         "You have too many non-dialable objects allocated.\nThe system only supports 1000 trunk/dialer/queue objects.\nDelete some of the existing objects if you would like\nto create new ones.\n\nIf you feel you have gotten this message incorrectly,\nplease report it as a problem to info@julmar.com."
+    IDS_LINEEXISTS          "The given dialable number is in use by another device.\nYou must give a unique dialable number to each\nstation, route point, and VRU."
+    IDS_LV_TRUNKID          "Trunk ID"
+    IDS_LV_CALLINFO         "Call Information"
+    IDS_TS_OFFLINE          "Out of Service"
+    IDS_TS_INBOUND          "Inbound Call"
+    IDS_TS_OUTBOUND         "Outbound Call"
+    IDS_TS_UNUSED           "Available"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_EXTENSIONINVALID    "The dialable extension must be between 1000 and 8999.\nThe other numbers are reserved for internal line identifiers\nsuch as route points, predictive dialers, and trunks."
+    IDS_LV_QUEUEID          "Queue ID"
+    IDS_LV_CALLSQUEUED      "# Calls Queued"
+    IDS_LV_OLDESTCALL       "Oldest Call"
+    IDS_LV_AGENTCOUNT       "# Agents"
+    IDS_TRUNKS              "Trunks"
+    IDS_RPOINTS             "Route Points"
+    IDS_QUEUES              "Queues"
+    IDS_RP_DONOTHING        "Ignore it, do nothing"
+    IDS_RP_TRANSFERTO       "Transfer the call to ..."
+    IDS_RP_DROP             "Drop the call"
+    IDS_DEFRPNAME           "Route Point [%04ld]"
+    IDS_MISSINGTRANSFERTO   "You must select the extension that you wish the incoming calls to be transferred to."
+    IDS_TRUNKNAME           "Trunk %04ld"
+    IDS_TOOMANYLINES        "You cannot define any more line devices - there are no more available extensions."
+    IDS_ERRORBIND           "Error - unable to bind the server socket!"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_LOG_STARTING        "JulMar PBX Simulator starting...."
+    IDS_LV_CALLID           "CallID"
+    IDS_LV_DNIS             "DNIS"
+    IDS_LV_ANI              "ANI"
+    IDS_CS_UNKNOWN          "Unknown"
+    IDS_CS_RINGING          "Ringing (Inactive)"
+    IDS_CS_ALERTING         "Ringing (Active)"
+    IDS_CS_CONNECTED        "Connected"
+    IDS_CS_BUSY             "Busy"
+    IDS_CS_DISCONNECTED     "Disconnected"
+    IDS_CS_HOLDING          "On Hold"
+    IDS_CS_CONNECTED2       "Connected (Inactive)"
+    IDS_CS_QUEUED           "In-Queue"
+    IDS_PDIALERS            "Predictive Dialers"
+    IDS_PD_BUSY             "Destination is BUSY"
+    IDS_PD_VOICE            "Answered by person"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PD_AMACHINE         "Answered by machine"
+    IDS_PD_UNKNOWN          "Answered by undeterminable"
+    IDS_PD_PROMPT           "Prompt using a dialog"
+    IDS_MISSINGPDIALTYPE    "You must select one of the predictive dialer commands to execute on each dialed call."
+    IDS_DEFVRUNAME          "VRU [%04ld]"
+    IDS_VRUS                "IVR Units"
+    IDS_INVALIDPORT         "The TCP/IP port you have entered is invalid.\nPlease select a port between  1 and 9999."
+    IDS_LOADFAILED          "Windows could not start %s, the most likely reason is that the program is not in the path or is not installed."
+    IDS_AGENTEXISTS         "The agent id you have specified already exists in the database.  Please enter a unique agent identifier."
+    IDS_INACTIVE            "Inactive"
+    IDS_PENDING             "%d PENDING"
+    IDS_CONFERENCED         "CONFERENCED"
+    IDS_CS_DIALING          "Dialing"
+    IDS_STOP                "Stop"
+    IDS_BADCPS              "The calls-per-second value you have entered is invalid.\nPlease enter a value between 1 and 20."
+    IDS_INVALIDFILE         "The log filename is not valid, please enter a valid path and filename."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_HOLDING             "%d HOLDING"
+    IDS_PD_RANDOM           "Random response (no prompt)"
+    IDS_LV_PDID             "Id"
+    IDS_PD_NOANSWER         "No Answer"
+    IDS_REMOVEALL           "You have existing configuration which will be overwritten if you import this data.\n\nDo you wish to continue?"
+    IDS_AUTOLOADERR         "The configuration file given has a problem or is invalid."
+    IDS_CONFIGURE           "There is no configuration information for JPBX.\nBefore you begin using the JTSP sample, you\nmust add at least one device into the configuration."
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_IMPORT          "Import switch configuration from a file"
+    ID_FILE_EXPORT          "Export switch configuration to a file"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif
+#include "res\JPBX.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

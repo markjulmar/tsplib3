@@ -1,0 +1,8 @@
+// Project: D:\Projects\JulMar\TSPLIB3\Samples\Dssp\SRC\DSSP.DSP.  DO NOT MODIFY THIS FILE BY HAND.
+//
+#define BUILDNUM_ENABLED (1)
+#define MODIFY_VERSIONINFO (1)
+#define FILE_VERSION0 (3)
+#define FILE_VERSION1 (0)
+#define FILE_VERSION2 (5)
+#define BUILD_NUMBER (10)

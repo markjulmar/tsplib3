@@ -1,0 +1,221 @@
+; $$ROOT$$.DEF
+; $$JULMAR_INFO$$
+
+LIBRARY         $$SAFE_ROOT$$
+;DESCRIPTION     '$$Root$$ TAPI Server'
+
+EXPORTS
+   TSPI_providerInit                   
+   TSPI_providerInstall                
+; TODO: You can remove TSPI_providerRemove if you don't wish the "Remove" button
+; to be enabled in the Telephony control panel for your service provider.
+   TSPI_providerRemove                 
+   TSPI_providerShutdown               
+   TSPI_providerEnumDevices            
+   TSPI_providerUIIdentify             
+   TSPI_lineNegotiateTSPIVersion       
+$$IF(OVERRIDE_LINE)
+$$IF(LINEFEATURE_0)
+   TSPI_lineAccept
+$$ENDIF
+$$IF(LINEFEATURE_2)
+   TSPI_lineAnswer
+$$ENDIF
+$$IF(LINEFEATURE_3)
+   TSPI_lineBlindTransfer
+$$ENDIF
+$$IF(LINEFEATURE_4)
+   TSPI_lineSetupTransfer
+   TSPI_lineCompleteTransfer
+$$ENDIF
+$$IF(LINEFEATURE_5)
+   TSPI_lineCompleteCall
+   TSPI_lineUncompleteCall
+$$ENDIF
+$$IF(LINEFEATURE_35)
+   TSPI_lineRedirect
+$$ENDIF
+$$IF(LINEFEATURE_8)
+   TSPI_lineDevSpecific
+   TSPI_lineDevSpecificFeature
+   TSPI_lineNegotiateExtVersion
+   TSPI_lineSelectExtVersion
+$$ENDIF
+$$IF(LINEFEATURE_9)
+   TSPI_lineForward
+$$ENDIF
+$$IF(LINEFEATURE_10)
+   TSPI_lineMonitorDigits
+   TSPI_lineGatherDigits
+$$ENDIF
+$$IF(LINEFEATURE_11)
+   TSPI_lineMonitorTones
+$$ENDIF
+$$IF(LINEFEATURE_12)
+   TSPI_lineGenerateDigits                     
+$$ENDIF
+$$IF(LINEFEATURE_13)
+   TSPI_lineGenerateTone
+$$ENDIF
+$$IF(LINEFEATURE_14)
+   TSPI_lineHold
+   TSPI_lineUnhold
+$$IF(HOLDCANSWAP)
+   TSPI_lineSwapHold
+$$ENDIF
+$$ENDIF
+$$IF(LINEFEATURE_18)
+   TSPI_linePark
+   TSPI_lineUnpark
+$$ENDIF
+$$IF(LINEFEATURE_19)
+   TSPI_linePickup
+$$ENDIF
+$$IF(LINEFEATURE_20)
+   TSPI_lineSecureCall
+$$ENDIF
+$$IF(LINEFEATURE_21)
+   TSPI_lineReleaseUserUserInfo
+$$IF(UUI_SEND)
+   TSPI_lineSendUserUserInfo
+$$ENDIF
+$$ENDIF
+$$IF(LINEFEATURE_22)
+   TSPI_lineSetMediaControl
+$$ENDIF
+   TSPI_lineClose                      
+   TSPI_lineCloseCall                  
+   TSPI_lineConditionalMediaDetection  
+   TSPI_lineDial
+   TSPI_lineDrop  
+   TSPI_lineGetAddressCaps             
+   TSPI_lineGetAddressID               
+   TSPI_lineGetAddressStatus           
+   TSPI_lineGetCallAddressID           
+   TSPI_lineGetCallInfo                
+   TSPI_lineGetCallStatus              
+   TSPI_lineGetDevCaps                 
+   TSPI_lineGetID                      
+   TSPI_lineGetLineDevStatus           
+   TSPI_lineGetNumAddressIDs
+   TSPI_lineMakeCall      
+   TSPI_lineOpen    
+   TSPI_lineMonitorMedia
+$$IF(LINEFEATURE_1)
+   TSPI_lineAddToConference
+   TSPI_linePrepareAddToConference
+$$IF(CONFREMOVE)
+   TSPI_lineRemoveFromConference
+$$ENDIF
+   TSPI_lineSetupConference
+$$ENDIF
+   TSPI_lineSetAppSpecific             
+   TSPI_lineSetCallData
+   TSPI_lineSetCallParams                 
+   TSPI_lineSetCurrentLocation         
+   TSPI_lineSetDefaultMediaDetection   
+   TSPI_lineSetMediaMode               
+   TSPI_lineSetStatusMessages          
+$$IF(ISTAPI3)
+   TSPI_lineGetCallIDs
+$$IF(HASTAPI3CALLHUBS)
+   TSPI_lineGetCallHubTracking
+   TSPI_lineSetCallHubTracking
+$$ENDIF
+$$IF(HASTAPI3MSP)
+   TSPI_lineMSPIdentify
+   TSPI_lineCreateMSPInstance
+   TSPI_lineCloseMSPInstance
+   TSPI_lineReceiveMSPData
+$$ENDIF
+$$ENDIF
+$$IF(LINEFEATURE_23)
+   TSPI_lineSetTerminal
+$$ENDIF
+$$IF(LINEFEATURE_25)
+   TSPI_lineGetDevConfig
+   TSPI_lineSetDevConfig
+$$ENDIF
+$$IF(LINEFEATURE_26)
+   TSPI_lineSetCallQualityOfService
+$$ENDIF
+$$IF(LINEFEATURE_27)
+   TSPI_lineSetCallTreatment
+$$ENDIF
+$$IF(LINEFEATURE_24)
+   TSPI_providerCreateLineDevice
+$$ENDIF
+$$ENDIF
+$$IF(OVERRIDE_PHONE)
+   TSPI_phoneNegotiateTSPIVersion
+   TSPI_phoneOpen
+   TSPI_phoneClose
+   TSPI_phoneGetDevCaps
+   TSPI_phoneGetID
+   TSPI_phoneGetStatus
+   TSPI_phoneSetStatusMessages
+$$IF(PHONEFEATURE_0)
+   TSPI_phoneDevSpecific
+   TSPI_phoneGetExtensionID
+   TSPI_phoneNegotiateExtVersion
+   TSPI_phoneSelectExtVersion
+$$ENDIF
+$$IF(PHONEFEATURE_1)
+   TSPI_phoneGetData
+$$ENDIF
+$$IF(PHONEFEATURE_2)
+   TSPI_phoneSetData
+$$ENDIF
+$$IF(PHONEFEATURE_3)
+   TSPI_phoneGetDisplay
+$$IF(DISPLAY_CANWRITE)
+   TSPI_phoneSetDisplay
+$$ENDIF
+$$ENDIF
+$$IF(PHONEFEATURE_4)
+   TSPI_phoneGetButtonInfo
+   TSPI_phoneGetLamp
+$$IF(BUTTON_CANWRITE)
+   TSPI_phoneSetButtonInfo
+$$ENDIF
+$$IF(LAMP_CANWRITE)
+   TSPI_phoneSetLamp
+$$ENDIF
+$$ENDIF
+$$IF(PHONEFEATURE_6)
+   TSPI_phoneGetRing
+$$IF(RINGER_CANWRITE)
+   TSPI_phoneSetRing
+$$ENDIF
+$$ENDIF
+$$IF(PHONEFEATURE_5)
+   TSPI_phoneGetGain
+   TSPI_phoneGetHookSwitch
+   TSPI_phoneGetVolume
+$$IF(GAIN_CANWRITE)
+   TSPI_phoneSetGain
+$$ENDIF
+$$IF(HOOKSWITCH_CANWRITE)
+   TSPI_phoneSetHookSwitch
+$$ENDIF
+$$IF(VOLUME_CANWRITE)
+   TSPI_phoneSetVolume
+$$ENDIF
+$$ENDIF
+$$IF(PHONEFEATURE_7)
+   TSPI_providerCreatePhoneDevice
+$$ENDIF
+$$ENDIF
+$$IF(HAS_UI)
+$$IF(OVERRIDE_LINE)
+   TSPI_lineConfigDialog               
+$$ENDIF
+$$IF(OVERRIDE_PHONE)
+   TSPI_phoneConfigDialog
+$$ENDIF
+   TSPI_providerConfig                 
+   TSPI_providerGenericDialogData
+$$ELSE
+   TUISPI_providerInstall
+   TUISPI_providerRemove
+$$ENDIF

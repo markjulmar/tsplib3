@@ -1,0 +1,18 @@
+; This file is maintained by HCW. Do not modify this file directly.
+
+[OPTIONS]
+COMPRESS=12 Hall Zeck
+ERRORLOG=TSPWizard.LOG
+LCID=0x409 0x0 0x0 ; English (United States)
+REPORT=Yes
+CONTENTS=contents
+TITLE=TSP Wizard Help
+COPYRIGHT=Copyright (C) 2004 JulMar Technology, Inc.
+CITATION=Copyright (C) 2004 JulMar Technology, Inc.
+HLP=TSPWizard.HLP
+
+[FILES]
+TSPWizard.rtf
+
+[MAP]
+#include TSPWizard.hm

@@ -1,0 +1,49 @@
+$$// confirm.inf - The text used in the New Project confirmation dialog
+$$// Copyright (C) 2000-2004 JulMar Technology, Inc.
+Application type of $$ROOT$$:
+     32-bit TAPI Service Provider shell for TAPI $$TAPIVERSION2$$
+$$IF(ISTAPI3)
+		  Windows 2000
+$$ELSE
+          Windows NT 4.x/5.x
+$$IF(!WINNTONLY)
+          Windows 95 (with TAPI 2.1 installed)
+          Windows 98
+$$ENDIF
+$$ENDIF
+
+Classes to be created:
+    Service Provider shell ($$SP_CLASS_NAME$$)
+    Device override ($$DEVICE_CLASS_NAME$$)
+$$IF(OVERRIDE_LINE)
+    Line override ($$LINE_CLASS_NAME$$)
+$$IF(OVERRIDE_ADDRESS)
+	Address override ($$ADDRESS_CLASS_NAME$$)
+$$ENDIF
+$$IF(OVERRIDE_CALL)
+	Call override ($$CALL_CLASS_NAME$$)
+$$ENDIF
+$$IF(OVERRIDE_CONFCALL)
+	Conference call override ($$CONFCALL_CLASS_NAME$$)
+$$ENDIF
+$$ENDIF
+$$IF(OVERRIDE_PHONE)
+    Phone override ($$PHONE_CLASS_NAME$$)
+$$ENDIF
+
+Features:
+$$IF(VERBOSE)
+    * Source comments
+$$ENDIF
+$$IF(HAS_UI)
+    * User-interface DLL (UIDLL)
+$$ENDIF
+$$IF(USE_POOLMGR)
+    * Library managed thread pool
+$$ENDIF
+$$IF(USE_WINSOCK)
+    * WinSock 2 support
+$$ENDIF
+$$IF(USE_COMM)
+    * Comm Driver support
+$$ENDIF

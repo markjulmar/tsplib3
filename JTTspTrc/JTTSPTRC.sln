@@ -1,0 +1,28 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "JTTSPTRC", "JTTSPTRC.vcproj", "{8ADBF990-2FA2-4803-A622-74A368822339}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 1
+		SccProjectUniqueName0 = JTTSPTRC.vcproj
+		SccProjectName0 = \u0022$/JulMar\u0020Technology,\u0020Inc./v3.0/TSPLib/JTTspTrc\u0022,\u0020XFBAAAAA
+		SccLocalPath0 = .
+		SccProvider0 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+	EndGlobalSection
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{8ADBF990-2FA2-4803-A622-74A368822339}.Debug.ActiveCfg = Debug|Win32
+		{8ADBF990-2FA2-4803-A622-74A368822339}.Debug.Build.0 = Debug|Win32
+		{8ADBF990-2FA2-4803-A622-74A368822339}.Release.ActiveCfg = Release|Win32
+		{8ADBF990-2FA2-4803-A622-74A368822339}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
