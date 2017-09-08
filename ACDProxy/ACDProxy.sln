@@ -1,0 +1,28 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ACDProxy", "ACDProxy.vcproj", "{3B7E0B86-BFAF-4141-92EB-1FA1F1FBF41E}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 1
+		SccProjectUniqueName0 = ACDProxy.vcproj
+		SccProjectName0 = \u0022$/TSP++\u0020Library\u0020V3/ACDProxy\u0022,\u0020SYAAAAAA
+		SccLocalPath0 = .
+		SccProvider0 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+	EndGlobalSection
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{3B7E0B86-BFAF-4141-92EB-1FA1F1FBF41E}.Debug.ActiveCfg = Debug|Win32
+		{3B7E0B86-BFAF-4141-92EB-1FA1F1FBF41E}.Debug.Build.0 = Debug|Win32
+		{3B7E0B86-BFAF-4141-92EB-1FA1F1FBF41E}.Release.ActiveCfg = Release|Win32
+		{3B7E0B86-BFAF-4141-92EB-1FA1F1FBF41E}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
